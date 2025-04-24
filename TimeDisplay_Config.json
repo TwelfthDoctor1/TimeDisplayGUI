@@ -1,0 +1,14 @@
+{
+    "darkMode": true,
+    "fontSize12Hr": 100,
+    "fontSizeDate": 30,
+    "fontSizeTime": 120,
+    "fontType": "LTAIdentity",
+    "is24Hr": false,
+    "isFloating": true,
+    "memHWindowSize": 996,
+    "memVWindowSize": 289,
+    "showDate": true,
+    "showHr12": true,
+    "showSecs": true
+}
