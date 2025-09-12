@@ -1,12 +1,20 @@
 import datetime
 import sys
-from PyQt5.QtCore import QTimer, Qt, QSize
-from PyQt5.QtGui import QFont, QResizeEvent
-from PyQt5.QtWidgets import QMainWindow, QApplication, QDialog
-from Qt5UI.QtStyleSheet import QT_STYLESHEET_DARK, QT_STYLESHEET_LIGHT
-from Qt5UI.TimeDisplaySettings import Ui_Settings
-from Qt5UI.TimeDisplayUI import Ui_TimeDisplay
+from PyQt6 import QtCore
+from PyQt6.QtCore import QTimer, Qt, QSize
+from PyQt6.QtGui import QFont, QResizeEvent
+from PyQt6.QtWidgets import QMainWindow, QApplication, QDialog
+from Qt6UI.QtStyleSheet import QT_STYLESHEET_DARK, QT_STYLESHEET_LIGHT
+from Qt6UI.TimeDisplaySettings import Ui_Settings
+from Qt6UI.TimeDisplayUI import Ui_TimeDisplay
 from UtilLib.ConfigJSON import ConfigJSON, CONFIG_NAME
+
+
+if hasattr(QtCore.Qt, 'AA_EnableHighDpiScaling'):
+    QApplication.setAttribute(QtCore.Qt.AA_EnableHighDpiScaling, True)
+
+if hasattr(QtCore.Qt, 'AA_UseHighDpiPixmaps'):
+    QApplication.setAttribute(QtCore.Qt.AA_UseHighDpiPixmaps, True)
 
 
 class TimeDisplayGUI(QMainWindow):
@@ -30,12 +38,17 @@ class TimeDisplayGUI(QMainWindow):
         self.updateSettingState()
         self.onFloatChange()
         self.onSwitchTheme()
+        self.onUpdateWinVisibility()
+        self.onUpdateWindowBar()
 
         # Menubar - macOS Disabling (FOR TEST ONLY)
         if sys.platform == "darwin":
+            # Leave disabled, always use Native Menu Bar
             # self.ui.menubar.setNativeMenuBar(False)
+            # self.setWindowFlag(Qt.WindowType.Window.MacWindowToolBarButtonHint, False)
             pass
 
+        # Hotkey - Non macOS -> use Alt+S instead of CMD key
         if sys.platform != "darwin":
             self.ui.action_Settings.setShortcut("Alt+S")
 
@@ -59,6 +72,8 @@ class TimeDisplayGUI(QMainWindow):
         self.ui.actionDark_Mode.triggered.connect(self.settingDarkMode)
         self.ui.actionIncrease_Font.triggered.connect(self.settingIncreaseFont)
         self.ui.actionDecrease_Font.triggered.connect(self.settingDecreaseFont)
+        self.ui.actionFrameless.triggered.connect(self.settingFramelessWindowBar)
+        self.ui.actionUse_Native_Theme.triggered.connect(self.settingUseNativeTheme)
 
     def getTime(self):
         dt = datetime.datetime.now()
@@ -134,7 +149,7 @@ class TimeDisplayGUI(QMainWindow):
         settings_ui.setWindowTitle("Settings")
         settings_ui.exec()
         self.json.getConfigData()  # Re-formulate JSON after settings change
-        self.runSettings()
+        self.runSettings()  # Update GUI based on formulated settings change
 
     def updateSettingState(self):
         self.ui.action_Float_on_Top.setChecked(self.json.return_specific_json("isFloating"))
@@ -143,18 +158,23 @@ class TimeDisplayGUI(QMainWindow):
         self.ui.actionShow_Date.setChecked(self.json.return_specific_json("showDate"))
         self.ui.actionShow_AM_PM.setChecked(self.json.return_specific_json("showHr12"))
         self.ui.actionDark_Mode.setChecked(self.json.return_specific_json("darkMode"))
+        self.ui.actionFrameless.setChecked(self.json.return_specific_json("framelessWindowBar"))
+        self.ui.actionUse_Native_Theme.setChecked(self.json.return_specific_json("useNativeTheme"))
 
     def onFloatChange(self):
         if self.json.return_specific_json("isFloating") is True:
-            self.setWindowFlag(Qt.WindowStaysOnTopHint, True)
+            self.setWindowFlag(Qt.WindowType.WindowStaysOnTopHint, True)
         else:
-            self.setWindowFlag(Qt.WindowStaysOnTopHint, False)
+            self.setWindowFlag(Qt.WindowType.WindowStaysOnTopHint, False)
 
         # Refresh Window
         self.show()
 
     def runSettings(self):
+        self.onSwitchTheme()
         self.onFloatChange()
+        self.onUpdateWinVisibility()
+        self.onUpdateWindowBar()
 
     def settingFloat(self):
         self.json.update_specific_json("isFloating", self.ui.action_Float_on_Top.isChecked())
@@ -181,6 +201,16 @@ class TimeDisplayGUI(QMainWindow):
         self.json.update_specific_json("darkMode", self.ui.actionDark_Mode.isChecked())
         self.json.update_json_file()
         return self.onSwitchTheme()
+
+    def settingUseNativeTheme(self):
+        self.json.update_specific_json("useNativeTheme", self.ui.actionUse_Native_Theme.isChecked())
+        self.json.update_json_file()
+        return self.onSwitchTheme()
+
+    def settingFramelessWindowBar(self):
+        self.json.update_specific_json("framelessWindowBar", self.ui.actionFrameless.isChecked())
+        self.json.update_json_file()
+        return self.onUpdateWindowBar()
 
     def settingIncreaseFont(self):
         self.json.update_specific_json("fontSizeTime", self.json.return_specific_json("fontSizeTime") + 1)
@@ -211,10 +241,20 @@ class TimeDisplayGUI(QMainWindow):
         self.resize(size)
 
     def onSwitchTheme(self):
-        if self.json.return_specific_json("darkMode") is True:
+        if self.json.return_specific_json("useNativeTheme"):
+            self.setStyleSheet(None)
+        elif self.json.return_specific_json("darkMode"):
             self.setStyleSheet(QT_STYLESHEET_DARK)
         else:
             self.setStyleSheet(QT_STYLESHEET_LIGHT)
+
+    def onUpdateWinVisibility(self):
+        self.setWindowOpacity(self.json.return_specific_json("windowVisibility")/100)
+        self.show()
+
+    def onUpdateWindowBar(self):
+        self.setWindowFlag(Qt.WindowType.FramelessWindowHint, self.json.return_specific_json("framelessWindowBar"))
+        self.show()
 
 
 class TimeDisplaySettings(QDialog):
@@ -242,6 +282,9 @@ class TimeDisplaySettings(QDialog):
         self.ui.ShowSeconds.setChecked(self.json.return_specific_json("showSecs"))
         self.ui.ShowDate.setChecked(self.json.return_specific_json("showDate"))
         self.ui.useDarkMode.setChecked(self.json.return_specific_json("darkMode"))
+        self.ui.WindowVisibilitySlider.setValue(self.json.return_specific_json("windowVisibility"))
+        self.ui.setFrameless.setChecked(self.json.return_specific_json("framelessWindowBar"))
+        self.ui.setUseNativeTheme.setChecked(self.json.return_specific_json("useNativeTheme"))
 
         # Font
         if self.json.return_specific_json("fontType") is not None:
@@ -261,6 +304,9 @@ class TimeDisplaySettings(QDialog):
             self.ui.ShowSeconds.setFont(font)
             self.ui.ShowDate.setFont(font)
             self.ui.useDarkMode.setFont(font)
+            self.ui.WindowVisibilitySlider.setFont(font)
+            self.ui.setFrameless.setFont(font)
+            self.ui.setUseNativeTheme.setFont(font)
             self.ui.label.setFont(title_font)
 
     def accept(self):
@@ -275,6 +321,9 @@ class TimeDisplaySettings(QDialog):
         self.json.update_specific_json("showSecs", self.ui.ShowSeconds.isChecked())
         self.json.update_specific_json("showDate", self.ui.ShowDate.isChecked())
         self.json.update_specific_json("darkMode", self.ui.useDarkMode.isChecked())
+        self.json.update_specific_json("windowVisibility", self.ui.WindowVisibilitySlider.value())
+        self.json.update_specific_json("framelessWindowBar", self.ui.setFrameless.isChecked())
+        self.json.update_specific_json("useNativeTheme", self.ui.setUseNativeTheme.isChecked())
 
         # Update JSON File
         self.json.update_json_file()
@@ -287,7 +336,9 @@ class TimeDisplaySettings(QDialog):
         self.close()
 
     def onSwitchTheme(self):
-        if self.json.return_specific_json("darkMode") is True:
+        if self.json.return_specific_json("useNativeTheme"):
+            self.setStyleSheet(None)
+        elif self.json.return_specific_json("darkMode") is True:
             self.setStyleSheet(QT_STYLESHEET_DARK)
         else:
             self.setStyleSheet(QT_STYLESHEET_LIGHT)
@@ -310,6 +361,9 @@ class TimeDisplaySettings(QDialog):
             self.ui.ShowSeconds.setFont(font)
             self.ui.ShowDate.setFont(font)
             self.ui.useDarkMode.setFont(font)
+            self.ui.WindowVisibilityLabel.setFont(font)
+            self.ui.setFrameless.setFont(font)
+            self.ui.setUseNativeTheme.setFont(font)
             self.ui.label.setFont(title_font)
 
 

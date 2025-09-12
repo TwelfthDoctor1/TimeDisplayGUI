@@ -48,6 +48,7 @@
         <property name="font">
          <font>
           <pointsize>70</pointsize>
+          <weight>75</weight>
           <bold>true</bold>
          </font>
         </property>
@@ -67,6 +68,7 @@
         <property name="font">
          <font>
           <pointsize>70</pointsize>
+          <weight>75</weight>
           <bold>true</bold>
          </font>
         </property>
@@ -86,6 +88,7 @@
         <property name="font">
          <font>
           <pointsize>70</pointsize>
+          <weight>75</weight>
           <bold>true</bold>
          </font>
         </property>
@@ -105,6 +108,7 @@
         <property name="font">
          <font>
           <pointsize>70</pointsize>
+          <weight>75</weight>
           <bold>true</bold>
          </font>
         </property>
@@ -124,6 +128,7 @@
         <property name="font">
          <font>
           <pointsize>70</pointsize>
+          <weight>75</weight>
           <bold>true</bold>
          </font>
         </property>
@@ -143,6 +148,7 @@
         <property name="font">
          <font>
           <pointsize>50</pointsize>
+          <weight>75</weight>
           <bold>true</bold>
          </font>
         </property>
@@ -196,6 +202,7 @@
         <property name="font">
          <font>
           <pointsize>30</pointsize>
+          <weight>75</weight>
           <bold>true</bold>
          </font>
         </property>
@@ -212,6 +219,7 @@
         <property name="font">
          <font>
           <pointsize>30</pointsize>
+          <weight>75</weight>
           <bold>true</bold>
          </font>
         </property>
@@ -228,6 +236,7 @@
         <property name="font">
          <font>
           <pointsize>30</pointsize>
+          <weight>75</weight>
           <bold>true</bold>
          </font>
         </property>
@@ -275,7 +284,7 @@
      <x>0</x>
      <y>0</y>
      <width>731</width>
-     <height>24</height>
+     <height>37</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuOptions">
@@ -290,6 +299,8 @@
     <addaction name="actionShow_Date"/>
     <addaction name="actionShow_AM_PM"/>
     <addaction name="actionDark_Mode"/>
+    <addaction name="actionUse_Native_Theme"/>
+    <addaction name="actionFrameless"/>
     <addaction name="separator"/>
     <addaction name="actionIncrease_Font"/>
     <addaction name="actionDecrease_Font"/>
@@ -404,6 +415,28 @@
    </property>
    <property name="shortcut">
     <string>Ctrl+Shift+-</string>
+   </property>
+  </action>
+  <action name="actionFrameless">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Frameless</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+8</string>
+   </property>
+  </action>
+  <action name="actionUse_Native_Theme">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Use Native Theme</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+7</string>
    </property>
   </action>
  </widget>

@@ -29,12 +29,14 @@ if platform == "win32":  # Windows
     DIST_PATH = os.path.join(COMPILE_PATH, "dist")
     BUILD_PATH = os.path.join(COMPILE_PATH, "build")
     RESOURCE_PATH = os.path.join(BASE_PATH, "Resources")
+    ICON_PATH = os.path.join(BASE_PATH, "Resources", "TimeDisplayIcon_V2.png")
 
 elif platform == "darwin":  # macOS
     COMPILE_PATH = os.path.join(BASE_PATH, "CompileBuild", "MACOS")
     DIST_PATH = os.path.join(COMPILE_PATH, "dist")
     BUILD_PATH = os.path.join(COMPILE_PATH, "build")
     RESOURCE_PATH = os.path.join(BASE_PATH, "Resources")
+    ICON_PATH = os.path.join(BASE_PATH, "Resources", "TimeDisplayIcon_V2.png")
 
 else:  # Supposedly Linux
     # Currently does not support Linux, though the macOS UNIX exec file may suffice (TBD)
@@ -58,7 +60,9 @@ if platform == "darwin":  # macOS
             "--windowed",
             "-y",
             f"--distpath={DIST_PATH}",
-            f"--workpath={BUILD_PATH}"
+            f"--workpath={BUILD_PATH}",
+            f"--add-data={RESOURCE_PATH}:Resources",
+            f"-i={ICON_PATH}"
         ],
     )
     print("Completed Compilation of file. Editing Info.plist for Dark Mode support...")

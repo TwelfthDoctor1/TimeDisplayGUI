@@ -40,7 +40,7 @@ def get_new_log_dir():
 
     No Params Required.
     """
-    if delete_old_apprentice_log is True:
+    if delete_old_apprentice_log:
 
         new_log_name = f"{FILENAME}_Apprentice_Log [OLD].log"
 
@@ -71,13 +71,14 @@ class ApprenticeLogger:
     :param main_owner
     :param additional_context
     """
-    def __init__(self, module_name, main_owner=None, additional_context=None):
+    def __init__(self, module_name, main_owner=None, additional_context=None, enable=True):
         self.module_name = module_name
         self.main_owner = main_owner
         self.addt_ctext = additional_context
+        self.enable = enable
 
         global HAS_INIT
-        if HAS_INIT is False:
+        if HAS_INIT is False and self.enable is True:
             if os.path.exists(get_log_dir()):
                 os.rename(get_log_dir(), get_new_log_dir())
 
@@ -89,7 +90,7 @@ class ApprenticeLogger:
                 log_file.write(
                     "\n==================================================================================================")
                 log_file.write(
-                    "\nCreation Date: {0} {1} {2} [UK] | {2} {1} {0} [US]".format(dt.day, dt.strftime("%B"), dt.year))
+                    "\nCreation Date: {0} {1} {2} [UK] | {1} {0} {2} [US]".format(dt.day, dt.strftime("%B"), dt.year))
                 log_file.write(
                     "\nCreation Time: {0}:{1}:{2} {3}".format(dt.strftime("%I"), dt.strftime("%M"), dt.strftime("%S"),
                                                               dt.strftime("%p")))
@@ -116,24 +117,25 @@ class ApprenticeLogger:
         :param owner:
         :return:
         """
-        log_file = open(get_log_dir(), "a")
-        dt_log = datetime.datetime.now()
-        owner = self.main_owner or owner
-        log_file.write("\n")
-        log_file.write("\n[LOG: {0} {1} {2} | {3}:{4}:{5} {6}] {7} | {8}]".format(
-            dt_log.day, dt_log.strftime("%B"),
-            dt_log.year, dt_log.strftime("%I"),
-            dt_log.strftime("%M"),
-            dt_log.strftime("%S"),
-            dt_log.strftime("%p"),
-            self.module_name,
-            owner
-        ))
-        if self.addt_ctext is not None:
-            log_file.write("\n{0}".format(self.addt_ctext))
-        log_file.write("\n")
-        log_file.write("\n{0}".format(message))
-        log_file.write("\n==================================================================================================")
+        if self.enable is True:
+            log_file = open(get_log_dir(), "a")
+            dt_log = datetime.datetime.now()
+            owner = self.main_owner or owner
+            log_file.write("\n")
+            log_file.write("\n[LOG: {0} {1} {2} | {3}:{4}:{5} {6}] {7} | {8}]".format(
+                dt_log.day, dt_log.strftime("%B"),
+                dt_log.year, dt_log.strftime("%I"),
+                dt_log.strftime("%M"),
+                dt_log.strftime("%S"),
+                dt_log.strftime("%p"),
+                self.module_name,
+                owner
+            ))
+            if self.addt_ctext is not None:
+                log_file.write("\n{0}".format(self.addt_ctext))
+            log_file.write("\n")
+            log_file.write("\n{0}".format(message))
+            log_file.write("\n==================================================================================================")
 
     def info(self, message, owner=None):
         """
@@ -143,24 +145,25 @@ class ApprenticeLogger:
         :param owner:
         :return:
         """
-        log_file = open(get_log_dir(), "a")
-        dt_info = datetime.datetime.now()
-        owner = self.main_owner or owner
-        log_file.write("\n")
-        log_file.write("\n[INFO: {0} {1} {2} | {3}:{4}:{5} {6}] {7} | {8}]".format(
-            dt_info.day, dt_info.strftime("%B"),
-            dt_info.year, dt_info.strftime("%I"),
-            dt_info.strftime("%M"),
-            dt_info.strftime("%S"),
-            dt_info.strftime("%p"),
-            self.module_name,
-            owner
-        ))
-        if self.addt_ctext is not None:
-            log_file.write("\n{0}".format(self.addt_ctext))
-        log_file.write("\n")
-        log_file.write("\n{0}".format(message))
-        log_file.write("\n==================================================================================================")
+        if self.enable is True:
+            log_file = open(get_log_dir(), "a")
+            dt_info = datetime.datetime.now()
+            owner = self.main_owner or owner
+            log_file.write("\n")
+            log_file.write("\n[INFO: {0} {1} {2} | {3}:{4}:{5} {6}] {7} | {8}]".format(
+                dt_info.day, dt_info.strftime("%B"),
+                dt_info.year, dt_info.strftime("%I"),
+                dt_info.strftime("%M"),
+                dt_info.strftime("%S"),
+                dt_info.strftime("%p"),
+                self.module_name,
+                owner
+            ))
+            if self.addt_ctext is not None:
+                log_file.write("\n{0}".format(self.addt_ctext))
+            log_file.write("\n")
+            log_file.write("\n{0}".format(message))
+            log_file.write("\n==================================================================================================")
 
     def debug(self, message, owner=None):
         """
@@ -170,24 +173,25 @@ class ApprenticeLogger:
         :param owner:
         :return:
         """
-        log_file = open(get_log_dir(), "a")
-        dt_debug = datetime.datetime.now()
-        owner = self.main_owner or owner
-        log_file.write("\n")
-        log_file.write("\n[INFO: {0} {1} {2} | {3}:{4}:{5} {6}] {7} | {8}]".format(
-            dt_debug.day, dt_debug.strftime("%B"),
-            dt_debug.year, dt_debug.strftime("%I"),
-            dt_debug.strftime("%M"),
-            dt_debug.strftime("%S"),
-            dt_debug.strftime("%p"),
-            self.module_name,
-            owner
-        ))
-        if self.addt_ctext is not None:
-            log_file.write("\n{0}".format(self.addt_ctext))
-        log_file.write("\n")
-        log_file.write("\n{0}".format(message))
-        log_file.write("\n==================================================================================================")
+        if self.enable is True:
+            log_file = open(get_log_dir(), "a")
+            dt_debug = datetime.datetime.now()
+            owner = self.main_owner or owner
+            log_file.write("\n")
+            log_file.write("\n[INFO: {0} {1} {2} | {3}:{4}:{5} {6}] {7} | {8}]".format(
+                dt_debug.day, dt_debug.strftime("%B"),
+                dt_debug.year, dt_debug.strftime("%I"),
+                dt_debug.strftime("%M"),
+                dt_debug.strftime("%S"),
+                dt_debug.strftime("%p"),
+                self.module_name,
+                owner
+            ))
+            if self.addt_ctext is not None:
+                log_file.write("\n{0}".format(self.addt_ctext))
+            log_file.write("\n")
+            log_file.write("\n{0}".format(message))
+            log_file.write("\n==================================================================================================")
 
     def warn(self, message, owner=None):
         """
@@ -197,24 +201,25 @@ class ApprenticeLogger:
         :param owner:
         :return:
         """
-        log_file = open(get_log_dir(), "a")
-        dt_warn = datetime.datetime.now()
-        owner = self.main_owner or owner
-        log_file.write("\n")
-        log_file.write("\n[WARN: {0} {1} {2} | {3}:{4}:{5} {6}] {7} | {8}]".format(
-            dt_warn.day, dt_warn.strftime("%B"),
-            dt_warn.year, dt_warn.strftime("%I"),
-            dt_warn.strftime("%M"),
-            dt_warn.strftime("%S"),
-            dt_warn.strftime("%p"),
-            self.module_name,
-            owner
-        ))
-        if self.addt_ctext is not None:
-            log_file.write("\n{0}".format(self.addt_ctext))
-        log_file.write("\n")
-        log_file.write("\n{0}".format(message))
-        log_file.write("\n==================================================================================================")
+        if self.enable is True:
+            log_file = open(get_log_dir(), "a")
+            dt_warn = datetime.datetime.now()
+            owner = self.main_owner or owner
+            log_file.write("\n")
+            log_file.write("\n[WARN: {0} {1} {2} | {3}:{4}:{5} {6}] {7} | {8}]".format(
+                dt_warn.day, dt_warn.strftime("%B"),
+                dt_warn.year, dt_warn.strftime("%I"),
+                dt_warn.strftime("%M"),
+                dt_warn.strftime("%S"),
+                dt_warn.strftime("%p"),
+                self.module_name,
+                owner
+            ))
+            if self.addt_ctext is not None:
+                log_file.write("\n{0}".format(self.addt_ctext))
+            log_file.write("\n")
+            log_file.write("\n{0}".format(message))
+            log_file.write("\n==================================================================================================")
 
     def error(self, message, owner=None):
         """
@@ -224,24 +229,25 @@ class ApprenticeLogger:
         :param owner:
         :return:
         """
-        log_file = open(get_log_dir(), "a")
-        dt_error = datetime.datetime.now()
-        owner = self.main_owner or owner
-        log_file.write("\n")
-        log_file.write("\n[ERROR: {0} {1} {2} | {3}:{4}:{5} {6}] {7} | {8}]".format(
-            dt_error.day, dt_error.strftime("%B"),
-            dt_error.year, dt_error.strftime("%I"),
-            dt_error.strftime("%M"),
-            dt_error.strftime("%S"),
-            dt_error.strftime("%p"),
-            self.module_name,
-            owner
-        ))
-        if self.addt_ctext is not None:
-            log_file.write("\n{0}".format(self.addt_ctext))
-        log_file.write("\n")
-        log_file.write("\n{0}".format(message))
-        log_file.write("\n==================================================================================================")
+        if self.enable is True:
+            log_file = open(get_log_dir(), "a")
+            dt_error = datetime.datetime.now()
+            owner = self.main_owner or owner
+            log_file.write("\n")
+            log_file.write("\n[ERROR: {0} {1} {2} | {3}:{4}:{5} {6}] {7} | {8}]".format(
+                dt_error.day, dt_error.strftime("%B"),
+                dt_error.year, dt_error.strftime("%I"),
+                dt_error.strftime("%M"),
+                dt_error.strftime("%S"),
+                dt_error.strftime("%p"),
+                self.module_name,
+                owner
+            ))
+            if self.addt_ctext is not None:
+                log_file.write("\n{0}".format(self.addt_ctext))
+            log_file.write("\n")
+            log_file.write("\n{0}".format(message))
+            log_file.write("\n==================================================================================================")
 
     def assert_error(self, message, owner=None):
         """
@@ -253,26 +259,27 @@ class ApprenticeLogger:
         :param owner:
         :return:
         """
-        log_file = open(get_log_dir(), "a")
-        dt_assert = datetime.datetime.now()
-        owner = self.main_owner or owner
-        log_file.write("\n")
-        log_file.write("\n[ERROR WITH ASSERTION: {0} {1} {2} | {3}:{4}:{5} {6}] {7} | {8}]".format(
-            dt_assert.day, dt_assert.strftime("%B"),
-            dt_assert.year, dt_assert.strftime("%I"),
-            dt_assert.strftime("%M"),
-            dt_assert.strftime("%S"),
-            dt_assert.strftime("%p"),
-            self.module_name,
-            owner
-        ))
-        if self.addt_ctext is not None:
-            log_file.write("\n{0}".format(self.addt_ctext))
-        log_file.write("\n")
-        log_file.write("\n{0}".format(message))
-        log_file.write("\n==================================================================================================")
+        if not self.enable:
+            log_file = open(get_log_dir(), "a")
+            dt_assert = datetime.datetime.now()
+            owner = self.main_owner or owner
+            log_file.write("\n")
+            log_file.write("\n[ERROR WITH ASSERTION: {0} {1} {2} | {3}:{4}:{5} {6}] {7} | {8}]".format(
+                dt_assert.day, dt_assert.strftime("%B"),
+                dt_assert.year, dt_assert.strftime("%I"),
+                dt_assert.strftime("%M"),
+                dt_assert.strftime("%S"),
+                dt_assert.strftime("%p"),
+                self.module_name,
+                owner
+            ))
+            if self.addt_ctext is not None:
+                log_file.write("\n{0}".format(self.addt_ctext))
+            log_file.write("\n")
+            log_file.write("\n{0}".format(message))
+            log_file.write("\n==================================================================================================")
 
-        assert AssertionError(message)
+            assert AssertionError(message)
 
     def exception(self, message, owner=None):
         """
@@ -282,26 +289,27 @@ class ApprenticeLogger:
         :param owner:
         :return:
         """
-        log_file = open(get_log_dir(), "a")
-        dt_exc = datetime.datetime.now()
-        owner = self.main_owner or owner
-        log_file.write("\n")
-        log_file.write("\n[ERROR: {0} {1} {2} | {3}:{4}:{5} {6}] [{7} | {8}]".format(
-            dt_exc.day, dt_exc.strftime("%B"),
-            dt_exc.year, dt_exc.strftime("%I"),
-            dt_exc.strftime("%M"),
-            dt_exc.strftime("%S"),
-            dt_exc.strftime("%p"),
-            self.module_name,
-            owner
-        ))
-        if self.addt_ctext is not None:
-            log_file.write("\n{0}".format(self.addt_ctext))
-        log_file.write("\n")
-        log_file.write("\n{0}".format(message))
-        log_file.write("\n==================================================================================================")
+        if self.enable is True:
+            log_file = open(get_log_dir(), "a")
+            dt_exc = datetime.datetime.now()
+            owner = self.main_owner or owner
+            log_file.write("\n")
+            log_file.write("\n[ERROR: {0} {1} {2} | {3}:{4}:{5} {6}] [{7} | {8}]".format(
+                dt_exc.day, dt_exc.strftime("%B"),
+                dt_exc.year, dt_exc.strftime("%I"),
+                dt_exc.strftime("%M"),
+                dt_exc.strftime("%S"),
+                dt_exc.strftime("%p"),
+                self.module_name,
+                owner
+            ))
+            if self.addt_ctext is not None:
+                log_file.write("\n{0}".format(self.addt_ctext))
+            log_file.write("\n")
+            log_file.write("\n{0}".format(message))
+            log_file.write("\n==================================================================================================")
 
-        raise Exception(message)
+            raise Exception(message)
 
     @staticmethod
     def get_log_dir():

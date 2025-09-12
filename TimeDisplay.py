@@ -4,7 +4,7 @@
 # An application that displays time in a window.
 #
 # Author: TwelfthDoctor1 [TD1]
-# License: NIL/TBD~
+# License: NIL/TBD~, Likely MIT
 # ======================================================================================================================
 # Module Importation
 import os
@@ -17,7 +17,7 @@ from UtilLib.ConfigTemplate import CONFIG_DEFAULT, CONFIG_NAME
 #
 # Setting to configure Filepath.
 # Files will be saved in the ~ Directory (ref. User Directory)
-DEBUG = False
+DEBUG = True
 
 setDebugState_Config(DEBUG, Path(os.path.expanduser("~")).resolve())
 # ======================================================================================================================

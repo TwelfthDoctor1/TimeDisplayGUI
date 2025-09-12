@@ -41,7 +41,7 @@ def get_new_log_dir():
 
     No Params Required.
     """
-    if delete_old_master_log is True:
+    if delete_old_master_log:
 
         new_log_name = f"{FILENAME}_Master_Log [OLD].log"
 
@@ -74,14 +74,15 @@ class MasterLogger:
     :param main_owner
     :param additional_context
     """
-    def __init__(self, module_name, main_owner=None, additional_context=None):
+    def __init__(self, module_name, main_owner=None, additional_context=None, enable=True):
         self.module_name = module_name
         self.main_owner = main_owner
         self.addt_ctext = additional_context
+        self.enable = enable
 
         global HAS_INIT
 
-        if HAS_INIT is False and master_logger_enabler is True:
+        if HAS_INIT is False and master_logger_enabler is True and self.enable is True:
             if os.path.exists(get_log_dir()):
                 os.rename(get_log_dir(), get_new_log_dir())
 
@@ -92,7 +93,7 @@ class MasterLogger:
                 log_file.write(
                     "\n==================================================================================================")
                 log_file.write(
-                    "\nCreation Date: {0} {1} {2} [UK] | {2} {1} {0} [US]".format(dt.day, dt.strftime("%B"),
+                    "\nCreation Date: {0} {1} {2} [UK] | {1} {0} {2} [US]".format(dt.day, dt.strftime("%B"),
                                                                                   dt.year))
                 log_file.write("\nCreation Time: {0}:{1}:{2} {3}".format(dt.strftime("%I"), dt.strftime("%M"),
                                                                          dt.strftime("%S"), dt.strftime("%p")))
@@ -117,7 +118,7 @@ class MasterLogger:
         :param owner:
         :return:
         """
-        if master_logger_enabler is True:
+        if master_logger_enabler is True and self.enable is True:
             log_file = open(get_log_dir(), "a")
             dt_log = datetime.datetime.now()
             owner = self.main_owner or owner
@@ -145,7 +146,7 @@ class MasterLogger:
         :param owner:
         :return:
         """
-        if master_logger_enabler is True:
+        if master_logger_enabler is True and self.enable is True:
             log_file = open(get_log_dir(), "a")
             dt_info = datetime.datetime.now()
             owner = self.main_owner or owner
@@ -173,7 +174,7 @@ class MasterLogger:
         :param owner:
         :return:
         """
-        if master_logger_enabler is True:
+        if master_logger_enabler is True and self.enable is True:
             log_file = open(get_log_dir(), "a")
             dt_debug = datetime.datetime.now()
             owner = self.main_owner or owner
@@ -201,7 +202,7 @@ class MasterLogger:
         :param owner:
         :return:
         """
-        if master_logger_enabler is True:
+        if master_logger_enabler is True and self.enable is True:
             log_file = open(get_log_dir(), "a")
             dt_warn = datetime.datetime.now()
             owner = self.main_owner or owner
@@ -229,7 +230,7 @@ class MasterLogger:
         :param owner:
         :return:
         """
-        if master_logger_enabler is True:
+        if master_logger_enabler is True and self.enable is True:
             log_file = open(get_log_dir(), "a")
             dt_error = datetime.datetime.now()
             owner = self.main_owner or owner
@@ -259,7 +260,7 @@ class MasterLogger:
         :param owner:
         :return:
         """
-        if master_logger_enabler is True:
+        if master_logger_enabler is True and self.enable is True:
             log_file = open(get_log_dir(), "a")
             dt_assert = datetime.datetime.now()
             owner = self.main_owner or owner
@@ -289,7 +290,7 @@ class MasterLogger:
         :param owner:
         :return:
         """
-        if master_logger_enabler is True:
+        if master_logger_enabler is True and self.enable is True:
             log_file = open(get_log_dir(), "a")
             dt_exc = datetime.datetime.now()
             owner = self.main_owner or owner

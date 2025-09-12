@@ -5,5 +5,5 @@ __credits__ = "TwelfthDoctor1"
 __license__ = "MIT License"
 
 # Version Control Datum
-__version__ = "Developer Version 0.2.0"
+__version__ = "Developer Version 0.3.0"
 __status__ = "Development Testing"

@@ -3,7 +3,7 @@
 # This is the default settings for the config file (in .json)
 #
 # JSON Methodology make use of Python Dictionaries, thereby simplifying
-# addition, deletion and modification processes.
+# addition, deletion, and modification processes.
 #
 # Ensure that the keys are UNIQUE. Also ensure that the keys in code FULLY MATCH
 # those written here, or else an error will occur inferring that the key does not exist.
@@ -13,7 +13,7 @@
 CONFIG_NAME = "TimeDisplay_Config"  # Name of Config File
 CONFIG_DEFAULT = {
     "fontType": None,  # The font to use on the application
-    "is24Hr": False,  # Whether the time should be displayed in 12 hour mode or in 24 hour mode
+    "is24Hr": False,  # Whether the time should be displayed in 12-hour mode or in 24-hour mode
     "darkMode": True,  # Whether the application should be displayed in light mode or in dark mode (TBD)
     "isFloating": False,  # Whether the window is floating
     "fontSizeTime": 70,  # The font size of the Time Display
@@ -24,6 +24,9 @@ CONFIG_DEFAULT = {
     "showSecs": True,  # Whether the seconds should be shown
     "showDate": True,  # Whether the date should be shown
     "memHWindowSize": 0,  # Horizontal Window Size Memory
-    "memVWindowSize": 0  # Vertical Window Size Memory
+    "memVWindowSize": 0,  # Vertical Window Size Memory
+    "windowVisibility": 100,  # Window Visibility
+    "framelessWindowBar": False, # Set Frameless Window Bar
+    "useNativeTheme": False  # Use Native Theme - Use OS Theme Colours or Light/Dark Mode
 }
 # ======================================================================================================================

@@ -3,13 +3,13 @@ from pathlib import Path
 
 # Authoring, Attributes and Licensing
 __author__ = "TwelfthDoctor1"
-__copyright__ = "Copyright 2020: MasterApprentice Logger Project | © TD1 & TWoCC 2020-2023"
+__copyright__ = "Copyright: MasterApprentice Logger Project | © TD1 & TWoCC 2020-2025"
 __credits__ = "TwelfthDoctor1"
 __license__ = "CC 4.0 or MIT"
 
 
 # Version Control Datum
-__version__ = "Developer Version 1.5.0"
+__version__ = "Developer Version 1.6.0"
 __status__ = "Development Testing"
 
 
@@ -19,7 +19,7 @@ class MasterApprenticeLogVersionType:
     RELEASE = 2
 
 
-def setDebugState_Log(state: bool, mlog_bypass: bool = False, bypass_fp: Path or str = "", author: str = ""):
+def setDebugState_Log(state: bool, mlog_bypass: bool = False, bypass_fp: Path | str = "", author: str = ""):
     """
     Method to set the filepath for logging.
     :param author:
@@ -28,7 +28,7 @@ def setDebugState_Log(state: bool, mlog_bypass: bool = False, bypass_fp: Path or
     :param mlog_bypass:
     :return:
     """
-    if state is False:
+    if not state:
         global master_logger_enabler
         global apprentice_version_type
         global master_version_type
@@ -38,8 +38,10 @@ def setDebugState_Log(state: bool, mlog_bypass: bool = False, bypass_fp: Path or
         apprentice_version_type = MasterApprenticeLogVersionType.RELEASE
         master_version_type = MasterApprenticeLogVersionType.RELEASE
 
-        if mlog_bypass is False:
+        if not mlog_bypass:
             master_logger_enabler = False
+        else:
+            master_logger_enabler = True
 
         if bypass_fp != "":
             MAIN_DIR = bypass_fp
@@ -63,7 +65,7 @@ master_version_type = MasterApprenticeLogVersionType.DEVELOPER
 apprentice_version_type = MasterApprenticeLogVersionType.DEVELOPER
 
 # Enabler for the Master Logger
-# Leave this as [False] for release versions
+# Leave this as [False] for release versions or use setDebugState instead.
 master_logger_enabler = True
 
 # Delete old ApprenticeLogger Logs
@@ -72,4 +74,4 @@ delete_old_apprentice_log = True
 # Delete old MasterLogger Logs
 delete_old_master_log = True
 
-setDebugState_Log(True, False, Path(os.path.expanduser("~")).resolve())
+setDebugState_Log(True, False, Path(os.path.expanduser("~")).resolve()) # # Path(__file__).resolve().parent.parent

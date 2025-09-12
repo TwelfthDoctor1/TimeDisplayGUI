@@ -1,115 +1,1735 @@
 TwelfthDoctor1's Apprentice Log - TimeDisplay
-Apprentice Version: Developer Version 1.5.0
+Apprentice Version: Developer Version 1.6.0
 ==================================================================================================
-Creation Date: 24 April 2025 [UK] | 2025 April 24 [US]
-Creation Time: 11:57:45 AM
+Creation Date: 12 September 2025 [UK] | September 12 2025 [US]
+Creation Time: 10:24:29 AM
 ==================================================================================================
 NEW LOG ENTRIES WILL BE APPENDED BELOW. ALL DATETIME WILL FOLLOW THE UK FORMAT.
 ==================================================================================================
 Apprentice Log under Developer Control.
 ==================================================================================================
 
-[INFO: 24 April 2025 | 11:57:47 AM] JSONHandler Class @ TimeDisplay_Config | None]
+[INFO: 12 September 2025 | 10:24:29 AM] JSONHandler Class @ TimeDisplay_Config | None]
 
-File creation of Log at: /Volumes/Transfer/GitHub/TimeDisplayGUI/TimeDisplay_Apprentice_Log.log
+File creation of Log at: /Users/twelfthdoctor1/GitHub/TimeDisplayGUI/TimeDisplay_Apprentice_Log.log
 ==================================================================================================
 
-[INFO: 24 April 2025 | 11:57:47 AM] JSONHandler Class @ TimeDisplay_Config | None]
+[INFO: 12 September 2025 | 10:24:29 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
 
-JSON File (TimeDisplay_Config) already exists in /Users/twelfthdoctor1/TimeDisplay_Config.json. Skipping...
+JSON File (TimeDisplay_Config) already exists in /Users/twelfthdoctor1/GitHub/TimeDisplayGUI/TimeDisplay_Config.json. Skipping...
 ==================================================================================================
 
-[INFO: 24 April 2025 | 11:57:47 AM] JSONHandler Class @ TimeDisplay_Config | None]
+[INFO: 12 September 2025 | 10:24:29 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
 
-Formulated & ascertained JSON File Data in /Users/twelfthdoctor1/TimeDisplay_Config.json. Data can now be acquired/set with get/set functions.
+Formulated & ascertained JSON File Data in /Users/twelfthdoctor1/GitHub/TimeDisplayGUI/TimeDisplay_Config.json. Data can now be acquired/set with get/set functions.
 ==================================================================================================
 
-[INFO: 24 April 2025 | 11:57:47 AM] JSONHandler Class @ TimeDisplay_Config | None]
+[INFO: 12 September 2025 | 10:24:29 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
 
 Config Check: All keys accounted for. No key appending required.
 ==================================================================================================
 
-[INFO: 24 April 2025 | 11:57:47 AM] JSONHandler Class @ TimeDisplay_Config | None]
+[INFO: 12 September 2025 | 10:24:29 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
 
-JSON File (TimeDisplay_Config) already exists in /Users/twelfthdoctor1/TimeDisplay_Config.json. Skipping...
+JSON File (TimeDisplay_Config) already exists in /Users/twelfthdoctor1/GitHub/TimeDisplayGUI/TimeDisplay_Config.json. Skipping...
 ==================================================================================================
 
-[INFO: 24 April 2025 | 11:57:48 AM] JSONHandler Class @ TimeDisplay_Config | None]
+[INFO: 12 September 2025 | 10:24:29 AM] JSONHandler Class @ TimeDisplay_Config | None]
 
-File creation of Log at: /Volumes/Transfer/GitHub/TimeDisplayGUI/TimeDisplay_Apprentice_Log.log
+File creation of Log at: /Users/twelfthdoctor1/GitHub/TimeDisplayGUI/TimeDisplay_Apprentice_Log.log
 ==================================================================================================
 
-[INFO: 24 April 2025 | 11:57:48 AM] JSONHandler Class @ TimeDisplay_Config | None]
+[INFO: 12 September 2025 | 10:24:29 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
 
-JSON File (TimeDisplay_Config) already exists in /Users/twelfthdoctor1/TimeDisplay_Config.json. Skipping...
+JSON File (TimeDisplay_Config) already exists in /Users/twelfthdoctor1/GitHub/TimeDisplayGUI/TimeDisplay_Config.json. Skipping...
 ==================================================================================================
 
-[INFO: 24 April 2025 | 11:57:48 AM] JSONHandler Class @ TimeDisplay_Config | None]
+[INFO: 12 September 2025 | 10:24:29 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
 
-Formulated & ascertained JSON File Data in /Users/twelfthdoctor1/TimeDisplay_Config.json. Data can now be acquired/set with get/set functions.
+Formulated & ascertained JSON File Data in /Users/twelfthdoctor1/GitHub/TimeDisplayGUI/TimeDisplay_Config.json. Data can now be acquired/set with get/set functions.
 ==================================================================================================
 
-[INFO: 24 April 2025 | 11:57:48 AM] JSONHandler Class @ TimeDisplay_Config | None]
+[INFO: 12 September 2025 | 10:24:29 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
 
 Config Check: All keys accounted for. No key appending required.
 ==================================================================================================
 
-[INFO: 24 April 2025 | 11:57:48 AM] JSONHandler Class @ TimeDisplay_Config | None]
+[INFO: 12 September 2025 | 10:24:29 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
 
-Formulated & ascertained JSON File Data in /Users/twelfthdoctor1/TimeDisplay_Config.json. Data can now be acquired/set with get/set functions.
+Formulated & ascertained JSON File Data in /Users/twelfthdoctor1/GitHub/TimeDisplayGUI/TimeDisplay_Config.json. Data can now be acquired/set with get/set functions.
 ==================================================================================================
 
-[INFO: 24 April 2025 | 11:57:48 AM] JSONHandler Class @ TimeDisplay_Config | None]
+[INFO: 12 September 2025 | 10:24:29 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
 
 JSON File has been updated. All previous data entries have been overridden.
+
+JSON ENTRY:
+{
+    "WindowVisibility": 100,
+    "darkMode": true,
+    "fontSize12Hr": 50,
+    "fontSizeDate": 30,
+    "fontSizeTime": 70,
+    "fontType": "LTAIdentity",
+    "framelessWindowBar": false,
+    "is24Hr": false,
+    "isFloating": false,
+    "memHWindowSize": 438,
+    "memVWindowSize": 195,
+    "showDate": false,
+    "showHr12": true,
+    "showSecs": true,
+    "useNativeTheme": true,
+    "windowVisibility": 100
+}
 ==================================================================================================
 
-[INFO: 24 April 2025 | 11:57:57 AM] JSONHandler Class @ TimeDisplay_Config | None]
-
-File creation of Log at: /Volumes/Transfer/GitHub/TimeDisplayGUI/TimeDisplay_Apprentice_Log.log
-==================================================================================================
-
-[INFO: 24 April 2025 | 11:57:57 AM] JSONHandler Class @ TimeDisplay_Config | None]
-
-JSON File (TimeDisplay_Config) already exists in /Users/twelfthdoctor1/TimeDisplay_Config.json. Skipping...
-==================================================================================================
-
-[INFO: 24 April 2025 | 11:57:57 AM] JSONHandler Class @ TimeDisplay_Config | None]
-
-Formulated & ascertained JSON File Data in /Users/twelfthdoctor1/TimeDisplay_Config.json. Data can now be acquired/set with get/set functions.
-==================================================================================================
-
-[INFO: 24 April 2025 | 11:57:57 AM] JSONHandler Class @ TimeDisplay_Config | None]
-
-Config Check: All keys accounted for. No key appending required.
-==================================================================================================
-
-[INFO: 24 April 2025 | 11:57:57 AM] JSONHandler Class @ TimeDisplay_Config | None]
-
-JSON File (TimeDisplay_Config) already exists in /Users/twelfthdoctor1/TimeDisplay_Config.json. Skipping...
-==================================================================================================
-
-[INFO: 24 April 2025 | 11:57:57 AM] JSONHandler Class @ TimeDisplay_Config | None]
-
-Formulated & ascertained JSON File Data in /Users/twelfthdoctor1/TimeDisplay_Config.json. Data can now be acquired/set with get/set functions.
-==================================================================================================
-
-[INFO: 24 April 2025 | 11:57:57 AM] JSONHandler Class @ TimeDisplay_Config | None]
-
-Config Check: All keys accounted for. No key appending required.
-==================================================================================================
-
-[INFO: 24 April 2025 | 11:57:57 AM] JSONHandler Class @ TimeDisplay_Config | None]
-
-Formulated & ascertained JSON File Data in /Users/twelfthdoctor1/TimeDisplay_Config.json. Data can now be acquired/set with get/set functions.
-==================================================================================================
-
-[INFO: 24 April 2025 | 11:58:04 AM] JSONHandler Class @ TimeDisplay_Config | None]
+[INFO: 12 September 2025 | 10:24:33 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
 
 JSON File has been updated. All previous data entries have been overridden.
+
+JSON ENTRY:
+{
+    "WindowVisibility": 100,
+    "darkMode": true,
+    "fontSize12Hr": 50,
+    "fontSizeDate": 30,
+    "fontSizeTime": 70,
+    "fontType": "LTAIdentity",
+    "framelessWindowBar": false,
+    "is24Hr": false,
+    "isFloating": false,
+    "memHWindowSize": 438,
+    "memVWindowSize": 187,
+    "showDate": false,
+    "showHr12": true,
+    "showSecs": true,
+    "useNativeTheme": true,
+    "windowVisibility": 100
+}
 ==================================================================================================
 
-[INFO: 24 April 2025 | 11:58:04 AM] JSONHandler Class @ TimeDisplay_Config | None]
+[INFO: 12 September 2025 | 10:24:33 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
 
-Formulated & ascertained JSON File Data in /Users/twelfthdoctor1/TimeDisplay_Config.json. Data can now be acquired/set with get/set functions.
+JSON File has been updated. All previous data entries have been overridden.
+
+JSON ENTRY:
+{
+    "WindowVisibility": 100,
+    "darkMode": true,
+    "fontSize12Hr": 50,
+    "fontSizeDate": 30,
+    "fontSizeTime": 70,
+    "fontType": "LTAIdentity",
+    "framelessWindowBar": false,
+    "is24Hr": false,
+    "isFloating": false,
+    "memHWindowSize": 438,
+    "memVWindowSize": 184,
+    "showDate": false,
+    "showHr12": true,
+    "showSecs": true,
+    "useNativeTheme": true,
+    "windowVisibility": 100
+}
+==================================================================================================
+
+[INFO: 12 September 2025 | 10:24:33 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
+
+JSON File has been updated. All previous data entries have been overridden.
+
+JSON ENTRY:
+{
+    "WindowVisibility": 100,
+    "darkMode": true,
+    "fontSize12Hr": 50,
+    "fontSizeDate": 30,
+    "fontSizeTime": 70,
+    "fontType": "LTAIdentity",
+    "framelessWindowBar": false,
+    "is24Hr": false,
+    "isFloating": false,
+    "memHWindowSize": 438,
+    "memVWindowSize": 179,
+    "showDate": false,
+    "showHr12": true,
+    "showSecs": true,
+    "useNativeTheme": true,
+    "windowVisibility": 100
+}
+==================================================================================================
+
+[INFO: 12 September 2025 | 10:24:33 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
+
+JSON File has been updated. All previous data entries have been overridden.
+
+JSON ENTRY:
+{
+    "WindowVisibility": 100,
+    "darkMode": true,
+    "fontSize12Hr": 50,
+    "fontSizeDate": 30,
+    "fontSizeTime": 70,
+    "fontType": "LTAIdentity",
+    "framelessWindowBar": false,
+    "is24Hr": false,
+    "isFloating": false,
+    "memHWindowSize": 438,
+    "memVWindowSize": 172,
+    "showDate": false,
+    "showHr12": true,
+    "showSecs": true,
+    "useNativeTheme": true,
+    "windowVisibility": 100
+}
+==================================================================================================
+
+[INFO: 12 September 2025 | 10:24:33 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
+
+JSON File has been updated. All previous data entries have been overridden.
+
+JSON ENTRY:
+{
+    "WindowVisibility": 100,
+    "darkMode": true,
+    "fontSize12Hr": 50,
+    "fontSizeDate": 30,
+    "fontSizeTime": 70,
+    "fontType": "LTAIdentity",
+    "framelessWindowBar": false,
+    "is24Hr": false,
+    "isFloating": false,
+    "memHWindowSize": 438,
+    "memVWindowSize": 165,
+    "showDate": false,
+    "showHr12": true,
+    "showSecs": true,
+    "useNativeTheme": true,
+    "windowVisibility": 100
+}
+==================================================================================================
+
+[INFO: 12 September 2025 | 10:24:33 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
+
+JSON File has been updated. All previous data entries have been overridden.
+
+JSON ENTRY:
+{
+    "WindowVisibility": 100,
+    "darkMode": true,
+    "fontSize12Hr": 50,
+    "fontSizeDate": 30,
+    "fontSizeTime": 70,
+    "fontType": "LTAIdentity",
+    "framelessWindowBar": false,
+    "is24Hr": false,
+    "isFloating": false,
+    "memHWindowSize": 438,
+    "memVWindowSize": 157,
+    "showDate": false,
+    "showHr12": true,
+    "showSecs": true,
+    "useNativeTheme": true,
+    "windowVisibility": 100
+}
+==================================================================================================
+
+[INFO: 12 September 2025 | 10:24:33 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
+
+JSON File has been updated. All previous data entries have been overridden.
+
+JSON ENTRY:
+{
+    "WindowVisibility": 100,
+    "darkMode": true,
+    "fontSize12Hr": 50,
+    "fontSizeDate": 30,
+    "fontSizeTime": 70,
+    "fontType": "LTAIdentity",
+    "framelessWindowBar": false,
+    "is24Hr": false,
+    "isFloating": false,
+    "memHWindowSize": 438,
+    "memVWindowSize": 148,
+    "showDate": false,
+    "showHr12": true,
+    "showSecs": true,
+    "useNativeTheme": true,
+    "windowVisibility": 100
+}
+==================================================================================================
+
+[INFO: 12 September 2025 | 10:24:33 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
+
+JSON File has been updated. All previous data entries have been overridden.
+
+JSON ENTRY:
+{
+    "WindowVisibility": 100,
+    "darkMode": true,
+    "fontSize12Hr": 50,
+    "fontSizeDate": 30,
+    "fontSizeTime": 70,
+    "fontType": "LTAIdentity",
+    "framelessWindowBar": false,
+    "is24Hr": false,
+    "isFloating": false,
+    "memHWindowSize": 438,
+    "memVWindowSize": 137,
+    "showDate": false,
+    "showHr12": true,
+    "showSecs": true,
+    "useNativeTheme": true,
+    "windowVisibility": 100
+}
+==================================================================================================
+
+[INFO: 12 September 2025 | 10:24:33 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
+
+JSON File has been updated. All previous data entries have been overridden.
+
+JSON ENTRY:
+{
+    "WindowVisibility": 100,
+    "darkMode": true,
+    "fontSize12Hr": 50,
+    "fontSizeDate": 30,
+    "fontSizeTime": 70,
+    "fontType": "LTAIdentity",
+    "framelessWindowBar": false,
+    "is24Hr": false,
+    "isFloating": false,
+    "memHWindowSize": 438,
+    "memVWindowSize": 127,
+    "showDate": false,
+    "showHr12": true,
+    "showSecs": true,
+    "useNativeTheme": true,
+    "windowVisibility": 100
+}
+==================================================================================================
+
+[INFO: 12 September 2025 | 10:24:33 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
+
+JSON File has been updated. All previous data entries have been overridden.
+
+JSON ENTRY:
+{
+    "WindowVisibility": 100,
+    "darkMode": true,
+    "fontSize12Hr": 50,
+    "fontSizeDate": 30,
+    "fontSizeTime": 70,
+    "fontType": "LTAIdentity",
+    "framelessWindowBar": false,
+    "is24Hr": false,
+    "isFloating": false,
+    "memHWindowSize": 438,
+    "memVWindowSize": 124,
+    "showDate": false,
+    "showHr12": true,
+    "showSecs": true,
+    "useNativeTheme": true,
+    "windowVisibility": 100
+}
+==================================================================================================
+
+[INFO: 12 September 2025 | 10:24:33 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
+
+JSON File has been updated. All previous data entries have been overridden.
+
+JSON ENTRY:
+{
+    "WindowVisibility": 100,
+    "darkMode": true,
+    "fontSize12Hr": 50,
+    "fontSizeDate": 30,
+    "fontSizeTime": 70,
+    "fontType": "LTAIdentity",
+    "framelessWindowBar": false,
+    "is24Hr": false,
+    "isFloating": false,
+    "memHWindowSize": 437,
+    "memVWindowSize": 124,
+    "showDate": false,
+    "showHr12": true,
+    "showSecs": true,
+    "useNativeTheme": true,
+    "windowVisibility": 100
+}
+==================================================================================================
+
+[INFO: 12 September 2025 | 10:24:33 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
+
+JSON File has been updated. All previous data entries have been overridden.
+
+JSON ENTRY:
+{
+    "WindowVisibility": 100,
+    "darkMode": true,
+    "fontSize12Hr": 50,
+    "fontSizeDate": 30,
+    "fontSizeTime": 70,
+    "fontType": "LTAIdentity",
+    "framelessWindowBar": false,
+    "is24Hr": false,
+    "isFloating": false,
+    "memHWindowSize": 436,
+    "memVWindowSize": 124,
+    "showDate": false,
+    "showHr12": true,
+    "showSecs": true,
+    "useNativeTheme": true,
+    "windowVisibility": 100
+}
+==================================================================================================
+
+[INFO: 12 September 2025 | 10:24:33 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
+
+JSON File has been updated. All previous data entries have been overridden.
+
+JSON ENTRY:
+{
+    "WindowVisibility": 100,
+    "darkMode": true,
+    "fontSize12Hr": 50,
+    "fontSizeDate": 30,
+    "fontSizeTime": 70,
+    "fontType": "LTAIdentity",
+    "framelessWindowBar": false,
+    "is24Hr": false,
+    "isFloating": false,
+    "memHWindowSize": 435,
+    "memVWindowSize": 124,
+    "showDate": false,
+    "showHr12": true,
+    "showSecs": true,
+    "useNativeTheme": true,
+    "windowVisibility": 100
+}
+==================================================================================================
+
+[INFO: 12 September 2025 | 10:24:33 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
+
+JSON File has been updated. All previous data entries have been overridden.
+
+JSON ENTRY:
+{
+    "WindowVisibility": 100,
+    "darkMode": true,
+    "fontSize12Hr": 50,
+    "fontSizeDate": 30,
+    "fontSizeTime": 70,
+    "fontType": "LTAIdentity",
+    "framelessWindowBar": false,
+    "is24Hr": false,
+    "isFloating": false,
+    "memHWindowSize": 434,
+    "memVWindowSize": 124,
+    "showDate": false,
+    "showHr12": true,
+    "showSecs": true,
+    "useNativeTheme": true,
+    "windowVisibility": 100
+}
+==================================================================================================
+
+[INFO: 12 September 2025 | 10:24:33 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
+
+JSON File has been updated. All previous data entries have been overridden.
+
+JSON ENTRY:
+{
+    "WindowVisibility": 100,
+    "darkMode": true,
+    "fontSize12Hr": 50,
+    "fontSizeDate": 30,
+    "fontSizeTime": 70,
+    "fontType": "LTAIdentity",
+    "framelessWindowBar": false,
+    "is24Hr": false,
+    "isFloating": false,
+    "memHWindowSize": 433,
+    "memVWindowSize": 124,
+    "showDate": false,
+    "showHr12": true,
+    "showSecs": true,
+    "useNativeTheme": true,
+    "windowVisibility": 100
+}
+==================================================================================================
+
+[INFO: 12 September 2025 | 10:24:33 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
+
+JSON File has been updated. All previous data entries have been overridden.
+
+JSON ENTRY:
+{
+    "WindowVisibility": 100,
+    "darkMode": true,
+    "fontSize12Hr": 50,
+    "fontSizeDate": 30,
+    "fontSizeTime": 70,
+    "fontType": "LTAIdentity",
+    "framelessWindowBar": false,
+    "is24Hr": false,
+    "isFloating": false,
+    "memHWindowSize": 432,
+    "memVWindowSize": 124,
+    "showDate": false,
+    "showHr12": true,
+    "showSecs": true,
+    "useNativeTheme": true,
+    "windowVisibility": 100
+}
+==================================================================================================
+
+[INFO: 12 September 2025 | 10:24:33 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
+
+JSON File has been updated. All previous data entries have been overridden.
+
+JSON ENTRY:
+{
+    "WindowVisibility": 100,
+    "darkMode": true,
+    "fontSize12Hr": 50,
+    "fontSizeDate": 30,
+    "fontSizeTime": 70,
+    "fontType": "LTAIdentity",
+    "framelessWindowBar": false,
+    "is24Hr": false,
+    "isFloating": false,
+    "memHWindowSize": 431,
+    "memVWindowSize": 124,
+    "showDate": false,
+    "showHr12": true,
+    "showSecs": true,
+    "useNativeTheme": true,
+    "windowVisibility": 100
+}
+==================================================================================================
+
+[INFO: 12 September 2025 | 10:24:33 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
+
+JSON File has been updated. All previous data entries have been overridden.
+
+JSON ENTRY:
+{
+    "WindowVisibility": 100,
+    "darkMode": true,
+    "fontSize12Hr": 50,
+    "fontSizeDate": 30,
+    "fontSizeTime": 70,
+    "fontType": "LTAIdentity",
+    "framelessWindowBar": false,
+    "is24Hr": false,
+    "isFloating": false,
+    "memHWindowSize": 430,
+    "memVWindowSize": 124,
+    "showDate": false,
+    "showHr12": true,
+    "showSecs": true,
+    "useNativeTheme": true,
+    "windowVisibility": 100
+}
+==================================================================================================
+
+[INFO: 12 September 2025 | 10:24:33 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
+
+JSON File has been updated. All previous data entries have been overridden.
+
+JSON ENTRY:
+{
+    "WindowVisibility": 100,
+    "darkMode": true,
+    "fontSize12Hr": 50,
+    "fontSizeDate": 30,
+    "fontSizeTime": 70,
+    "fontType": "LTAIdentity",
+    "framelessWindowBar": false,
+    "is24Hr": false,
+    "isFloating": false,
+    "memHWindowSize": 429,
+    "memVWindowSize": 124,
+    "showDate": false,
+    "showHr12": true,
+    "showSecs": true,
+    "useNativeTheme": true,
+    "windowVisibility": 100
+}
+==================================================================================================
+
+[INFO: 12 September 2025 | 10:24:33 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
+
+JSON File has been updated. All previous data entries have been overridden.
+
+JSON ENTRY:
+{
+    "WindowVisibility": 100,
+    "darkMode": true,
+    "fontSize12Hr": 50,
+    "fontSizeDate": 30,
+    "fontSizeTime": 70,
+    "fontType": "LTAIdentity",
+    "framelessWindowBar": false,
+    "is24Hr": false,
+    "isFloating": false,
+    "memHWindowSize": 428,
+    "memVWindowSize": 124,
+    "showDate": false,
+    "showHr12": true,
+    "showSecs": true,
+    "useNativeTheme": true,
+    "windowVisibility": 100
+}
+==================================================================================================
+
+[INFO: 12 September 2025 | 10:24:33 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
+
+JSON File has been updated. All previous data entries have been overridden.
+
+JSON ENTRY:
+{
+    "WindowVisibility": 100,
+    "darkMode": true,
+    "fontSize12Hr": 50,
+    "fontSizeDate": 30,
+    "fontSizeTime": 70,
+    "fontType": "LTAIdentity",
+    "framelessWindowBar": false,
+    "is24Hr": false,
+    "isFloating": false,
+    "memHWindowSize": 427,
+    "memVWindowSize": 124,
+    "showDate": false,
+    "showHr12": true,
+    "showSecs": true,
+    "useNativeTheme": true,
+    "windowVisibility": 100
+}
+==================================================================================================
+
+[INFO: 12 September 2025 | 10:24:33 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
+
+JSON File has been updated. All previous data entries have been overridden.
+
+JSON ENTRY:
+{
+    "WindowVisibility": 100,
+    "darkMode": true,
+    "fontSize12Hr": 50,
+    "fontSizeDate": 30,
+    "fontSizeTime": 70,
+    "fontType": "LTAIdentity",
+    "framelessWindowBar": false,
+    "is24Hr": false,
+    "isFloating": false,
+    "memHWindowSize": 426,
+    "memVWindowSize": 124,
+    "showDate": false,
+    "showHr12": true,
+    "showSecs": true,
+    "useNativeTheme": true,
+    "windowVisibility": 100
+}
+==================================================================================================
+
+[INFO: 12 September 2025 | 10:24:34 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
+
+JSON File has been updated. All previous data entries have been overridden.
+
+JSON ENTRY:
+{
+    "WindowVisibility": 100,
+    "darkMode": true,
+    "fontSize12Hr": 50,
+    "fontSizeDate": 30,
+    "fontSizeTime": 70,
+    "fontType": "LTAIdentity",
+    "framelessWindowBar": false,
+    "is24Hr": false,
+    "isFloating": false,
+    "memHWindowSize": 425,
+    "memVWindowSize": 124,
+    "showDate": false,
+    "showHr12": true,
+    "showSecs": true,
+    "useNativeTheme": true,
+    "windowVisibility": 100
+}
+==================================================================================================
+
+[INFO: 12 September 2025 | 10:24:34 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
+
+JSON File has been updated. All previous data entries have been overridden.
+
+JSON ENTRY:
+{
+    "WindowVisibility": 100,
+    "darkMode": true,
+    "fontSize12Hr": 50,
+    "fontSizeDate": 30,
+    "fontSizeTime": 70,
+    "fontType": "LTAIdentity",
+    "framelessWindowBar": false,
+    "is24Hr": false,
+    "isFloating": false,
+    "memHWindowSize": 424,
+    "memVWindowSize": 124,
+    "showDate": false,
+    "showHr12": true,
+    "showSecs": true,
+    "useNativeTheme": true,
+    "windowVisibility": 100
+}
+==================================================================================================
+
+[INFO: 12 September 2025 | 10:24:34 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
+
+JSON File has been updated. All previous data entries have been overridden.
+
+JSON ENTRY:
+{
+    "WindowVisibility": 100,
+    "darkMode": true,
+    "fontSize12Hr": 50,
+    "fontSizeDate": 30,
+    "fontSizeTime": 70,
+    "fontType": "LTAIdentity",
+    "framelessWindowBar": false,
+    "is24Hr": false,
+    "isFloating": false,
+    "memHWindowSize": 423,
+    "memVWindowSize": 124,
+    "showDate": false,
+    "showHr12": true,
+    "showSecs": true,
+    "useNativeTheme": true,
+    "windowVisibility": 100
+}
+==================================================================================================
+
+[INFO: 12 September 2025 | 10:24:34 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
+
+JSON File has been updated. All previous data entries have been overridden.
+
+JSON ENTRY:
+{
+    "WindowVisibility": 100,
+    "darkMode": true,
+    "fontSize12Hr": 50,
+    "fontSizeDate": 30,
+    "fontSizeTime": 70,
+    "fontType": "LTAIdentity",
+    "framelessWindowBar": false,
+    "is24Hr": false,
+    "isFloating": false,
+    "memHWindowSize": 422,
+    "memVWindowSize": 124,
+    "showDate": false,
+    "showHr12": true,
+    "showSecs": true,
+    "useNativeTheme": true,
+    "windowVisibility": 100
+}
+==================================================================================================
+
+[INFO: 12 September 2025 | 10:24:34 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
+
+JSON File has been updated. All previous data entries have been overridden.
+
+JSON ENTRY:
+{
+    "WindowVisibility": 100,
+    "darkMode": true,
+    "fontSize12Hr": 50,
+    "fontSizeDate": 30,
+    "fontSizeTime": 70,
+    "fontType": "LTAIdentity",
+    "framelessWindowBar": false,
+    "is24Hr": false,
+    "isFloating": false,
+    "memHWindowSize": 421,
+    "memVWindowSize": 124,
+    "showDate": false,
+    "showHr12": true,
+    "showSecs": true,
+    "useNativeTheme": true,
+    "windowVisibility": 100
+}
+==================================================================================================
+
+[INFO: 12 September 2025 | 10:24:34 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
+
+JSON File has been updated. All previous data entries have been overridden.
+
+JSON ENTRY:
+{
+    "WindowVisibility": 100,
+    "darkMode": true,
+    "fontSize12Hr": 50,
+    "fontSizeDate": 30,
+    "fontSizeTime": 70,
+    "fontType": "LTAIdentity",
+    "framelessWindowBar": false,
+    "is24Hr": false,
+    "isFloating": false,
+    "memHWindowSize": 420,
+    "memVWindowSize": 124,
+    "showDate": false,
+    "showHr12": true,
+    "showSecs": true,
+    "useNativeTheme": true,
+    "windowVisibility": 100
+}
+==================================================================================================
+
+[INFO: 12 September 2025 | 10:24:34 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
+
+JSON File has been updated. All previous data entries have been overridden.
+
+JSON ENTRY:
+{
+    "WindowVisibility": 100,
+    "darkMode": true,
+    "fontSize12Hr": 50,
+    "fontSizeDate": 30,
+    "fontSizeTime": 70,
+    "fontType": "LTAIdentity",
+    "framelessWindowBar": false,
+    "is24Hr": false,
+    "isFloating": false,
+    "memHWindowSize": 417,
+    "memVWindowSize": 124,
+    "showDate": false,
+    "showHr12": true,
+    "showSecs": true,
+    "useNativeTheme": true,
+    "windowVisibility": 100
+}
+==================================================================================================
+
+[INFO: 12 September 2025 | 10:24:34 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
+
+JSON File has been updated. All previous data entries have been overridden.
+
+JSON ENTRY:
+{
+    "WindowVisibility": 100,
+    "darkMode": true,
+    "fontSize12Hr": 50,
+    "fontSizeDate": 30,
+    "fontSizeTime": 70,
+    "fontType": "LTAIdentity",
+    "framelessWindowBar": false,
+    "is24Hr": false,
+    "isFloating": false,
+    "memHWindowSize": 415,
+    "memVWindowSize": 124,
+    "showDate": false,
+    "showHr12": true,
+    "showSecs": true,
+    "useNativeTheme": true,
+    "windowVisibility": 100
+}
+==================================================================================================
+
+[INFO: 12 September 2025 | 10:24:34 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
+
+JSON File has been updated. All previous data entries have been overridden.
+
+JSON ENTRY:
+{
+    "WindowVisibility": 100,
+    "darkMode": true,
+    "fontSize12Hr": 50,
+    "fontSizeDate": 30,
+    "fontSizeTime": 70,
+    "fontType": "LTAIdentity",
+    "framelessWindowBar": false,
+    "is24Hr": false,
+    "isFloating": false,
+    "memHWindowSize": 412,
+    "memVWindowSize": 124,
+    "showDate": false,
+    "showHr12": true,
+    "showSecs": true,
+    "useNativeTheme": true,
+    "windowVisibility": 100
+}
+==================================================================================================
+
+[INFO: 12 September 2025 | 10:24:34 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
+
+JSON File has been updated. All previous data entries have been overridden.
+
+JSON ENTRY:
+{
+    "WindowVisibility": 100,
+    "darkMode": true,
+    "fontSize12Hr": 50,
+    "fontSizeDate": 30,
+    "fontSizeTime": 70,
+    "fontType": "LTAIdentity",
+    "framelessWindowBar": false,
+    "is24Hr": false,
+    "isFloating": false,
+    "memHWindowSize": 409,
+    "memVWindowSize": 124,
+    "showDate": false,
+    "showHr12": true,
+    "showSecs": true,
+    "useNativeTheme": true,
+    "windowVisibility": 100
+}
+==================================================================================================
+
+[INFO: 12 September 2025 | 10:24:34 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
+
+JSON File has been updated. All previous data entries have been overridden.
+
+JSON ENTRY:
+{
+    "WindowVisibility": 100,
+    "darkMode": true,
+    "fontSize12Hr": 50,
+    "fontSizeDate": 30,
+    "fontSizeTime": 70,
+    "fontType": "LTAIdentity",
+    "framelessWindowBar": false,
+    "is24Hr": false,
+    "isFloating": false,
+    "memHWindowSize": 406,
+    "memVWindowSize": 124,
+    "showDate": false,
+    "showHr12": true,
+    "showSecs": true,
+    "useNativeTheme": true,
+    "windowVisibility": 100
+}
+==================================================================================================
+
+[INFO: 12 September 2025 | 10:24:34 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
+
+JSON File has been updated. All previous data entries have been overridden.
+
+JSON ENTRY:
+{
+    "WindowVisibility": 100,
+    "darkMode": true,
+    "fontSize12Hr": 50,
+    "fontSizeDate": 30,
+    "fontSizeTime": 70,
+    "fontType": "LTAIdentity",
+    "framelessWindowBar": false,
+    "is24Hr": false,
+    "isFloating": false,
+    "memHWindowSize": 403,
+    "memVWindowSize": 124,
+    "showDate": false,
+    "showHr12": true,
+    "showSecs": true,
+    "useNativeTheme": true,
+    "windowVisibility": 100
+}
+==================================================================================================
+
+[INFO: 12 September 2025 | 10:24:34 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
+
+JSON File has been updated. All previous data entries have been overridden.
+
+JSON ENTRY:
+{
+    "WindowVisibility": 100,
+    "darkMode": true,
+    "fontSize12Hr": 50,
+    "fontSizeDate": 30,
+    "fontSizeTime": 70,
+    "fontType": "LTAIdentity",
+    "framelessWindowBar": false,
+    "is24Hr": false,
+    "isFloating": false,
+    "memHWindowSize": 398,
+    "memVWindowSize": 124,
+    "showDate": false,
+    "showHr12": true,
+    "showSecs": true,
+    "useNativeTheme": true,
+    "windowVisibility": 100
+}
+==================================================================================================
+
+[INFO: 12 September 2025 | 10:24:34 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
+
+JSON File has been updated. All previous data entries have been overridden.
+
+JSON ENTRY:
+{
+    "WindowVisibility": 100,
+    "darkMode": true,
+    "fontSize12Hr": 50,
+    "fontSizeDate": 30,
+    "fontSizeTime": 70,
+    "fontType": "LTAIdentity",
+    "framelessWindowBar": false,
+    "is24Hr": false,
+    "isFloating": false,
+    "memHWindowSize": 394,
+    "memVWindowSize": 124,
+    "showDate": false,
+    "showHr12": true,
+    "showSecs": true,
+    "useNativeTheme": true,
+    "windowVisibility": 100
+}
+==================================================================================================
+
+[INFO: 12 September 2025 | 10:24:34 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
+
+JSON File has been updated. All previous data entries have been overridden.
+
+JSON ENTRY:
+{
+    "WindowVisibility": 100,
+    "darkMode": true,
+    "fontSize12Hr": 50,
+    "fontSizeDate": 30,
+    "fontSizeTime": 70,
+    "fontType": "LTAIdentity",
+    "framelessWindowBar": false,
+    "is24Hr": false,
+    "isFloating": false,
+    "memHWindowSize": 391,
+    "memVWindowSize": 124,
+    "showDate": false,
+    "showHr12": true,
+    "showSecs": true,
+    "useNativeTheme": true,
+    "windowVisibility": 100
+}
+==================================================================================================
+
+[INFO: 12 September 2025 | 10:24:35 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
+
+JSON File has been updated. All previous data entries have been overridden.
+
+JSON ENTRY:
+{
+    "WindowVisibility": 100,
+    "darkMode": true,
+    "fontSize12Hr": 50,
+    "fontSizeDate": 30,
+    "fontSizeTime": 70,
+    "fontType": "LTAIdentity",
+    "framelessWindowBar": false,
+    "is24Hr": false,
+    "isFloating": false,
+    "memHWindowSize": 392,
+    "memVWindowSize": 124,
+    "showDate": false,
+    "showHr12": true,
+    "showSecs": true,
+    "useNativeTheme": true,
+    "windowVisibility": 100
+}
+==================================================================================================
+
+[INFO: 12 September 2025 | 10:24:35 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
+
+JSON File has been updated. All previous data entries have been overridden.
+
+JSON ENTRY:
+{
+    "WindowVisibility": 100,
+    "darkMode": true,
+    "fontSize12Hr": 50,
+    "fontSizeDate": 30,
+    "fontSizeTime": 70,
+    "fontType": "LTAIdentity",
+    "framelessWindowBar": false,
+    "is24Hr": false,
+    "isFloating": false,
+    "memHWindowSize": 393,
+    "memVWindowSize": 124,
+    "showDate": false,
+    "showHr12": true,
+    "showSecs": true,
+    "useNativeTheme": true,
+    "windowVisibility": 100
+}
+==================================================================================================
+
+[INFO: 12 September 2025 | 10:24:35 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
+
+JSON File has been updated. All previous data entries have been overridden.
+
+JSON ENTRY:
+{
+    "WindowVisibility": 100,
+    "darkMode": true,
+    "fontSize12Hr": 50,
+    "fontSizeDate": 30,
+    "fontSizeTime": 70,
+    "fontType": "LTAIdentity",
+    "framelessWindowBar": false,
+    "is24Hr": false,
+    "isFloating": false,
+    "memHWindowSize": 395,
+    "memVWindowSize": 124,
+    "showDate": false,
+    "showHr12": true,
+    "showSecs": true,
+    "useNativeTheme": true,
+    "windowVisibility": 100
+}
+==================================================================================================
+
+[INFO: 12 September 2025 | 10:24:35 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
+
+JSON File has been updated. All previous data entries have been overridden.
+
+JSON ENTRY:
+{
+    "WindowVisibility": 100,
+    "darkMode": true,
+    "fontSize12Hr": 50,
+    "fontSizeDate": 30,
+    "fontSizeTime": 70,
+    "fontType": "LTAIdentity",
+    "framelessWindowBar": false,
+    "is24Hr": false,
+    "isFloating": false,
+    "memHWindowSize": 396,
+    "memVWindowSize": 124,
+    "showDate": false,
+    "showHr12": true,
+    "showSecs": true,
+    "useNativeTheme": true,
+    "windowVisibility": 100
+}
+==================================================================================================
+
+[INFO: 12 September 2025 | 10:24:35 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
+
+JSON File has been updated. All previous data entries have been overridden.
+
+JSON ENTRY:
+{
+    "WindowVisibility": 100,
+    "darkMode": true,
+    "fontSize12Hr": 50,
+    "fontSizeDate": 30,
+    "fontSizeTime": 70,
+    "fontType": "LTAIdentity",
+    "framelessWindowBar": false,
+    "is24Hr": false,
+    "isFloating": false,
+    "memHWindowSize": 397,
+    "memVWindowSize": 124,
+    "showDate": false,
+    "showHr12": true,
+    "showSecs": true,
+    "useNativeTheme": true,
+    "windowVisibility": 100
+}
+==================================================================================================
+
+[INFO: 12 September 2025 | 10:24:35 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
+
+JSON File has been updated. All previous data entries have been overridden.
+
+JSON ENTRY:
+{
+    "WindowVisibility": 100,
+    "darkMode": true,
+    "fontSize12Hr": 50,
+    "fontSizeDate": 30,
+    "fontSizeTime": 70,
+    "fontType": "LTAIdentity",
+    "framelessWindowBar": false,
+    "is24Hr": false,
+    "isFloating": false,
+    "memHWindowSize": 399,
+    "memVWindowSize": 124,
+    "showDate": false,
+    "showHr12": true,
+    "showSecs": true,
+    "useNativeTheme": true,
+    "windowVisibility": 100
+}
+==================================================================================================
+
+[INFO: 12 September 2025 | 10:24:35 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
+
+JSON File has been updated. All previous data entries have been overridden.
+
+JSON ENTRY:
+{
+    "WindowVisibility": 100,
+    "darkMode": true,
+    "fontSize12Hr": 50,
+    "fontSizeDate": 30,
+    "fontSizeTime": 70,
+    "fontType": "LTAIdentity",
+    "framelessWindowBar": false,
+    "is24Hr": false,
+    "isFloating": false,
+    "memHWindowSize": 400,
+    "memVWindowSize": 124,
+    "showDate": false,
+    "showHr12": true,
+    "showSecs": true,
+    "useNativeTheme": true,
+    "windowVisibility": 100
+}
+==================================================================================================
+
+[INFO: 12 September 2025 | 10:24:35 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
+
+JSON File has been updated. All previous data entries have been overridden.
+
+JSON ENTRY:
+{
+    "WindowVisibility": 100,
+    "darkMode": true,
+    "fontSize12Hr": 50,
+    "fontSizeDate": 30,
+    "fontSizeTime": 70,
+    "fontType": "LTAIdentity",
+    "framelessWindowBar": false,
+    "is24Hr": false,
+    "isFloating": false,
+    "memHWindowSize": 402,
+    "memVWindowSize": 124,
+    "showDate": false,
+    "showHr12": true,
+    "showSecs": true,
+    "useNativeTheme": true,
+    "windowVisibility": 100
+}
+==================================================================================================
+
+[INFO: 12 September 2025 | 10:24:35 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
+
+JSON File has been updated. All previous data entries have been overridden.
+
+JSON ENTRY:
+{
+    "WindowVisibility": 100,
+    "darkMode": true,
+    "fontSize12Hr": 50,
+    "fontSizeDate": 30,
+    "fontSizeTime": 70,
+    "fontType": "LTAIdentity",
+    "framelessWindowBar": false,
+    "is24Hr": false,
+    "isFloating": false,
+    "memHWindowSize": 404,
+    "memVWindowSize": 124,
+    "showDate": false,
+    "showHr12": true,
+    "showSecs": true,
+    "useNativeTheme": true,
+    "windowVisibility": 100
+}
+==================================================================================================
+
+[INFO: 12 September 2025 | 10:24:35 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
+
+JSON File has been updated. All previous data entries have been overridden.
+
+JSON ENTRY:
+{
+    "WindowVisibility": 100,
+    "darkMode": true,
+    "fontSize12Hr": 50,
+    "fontSizeDate": 30,
+    "fontSizeTime": 70,
+    "fontType": "LTAIdentity",
+    "framelessWindowBar": false,
+    "is24Hr": false,
+    "isFloating": false,
+    "memHWindowSize": 406,
+    "memVWindowSize": 124,
+    "showDate": false,
+    "showHr12": true,
+    "showSecs": true,
+    "useNativeTheme": true,
+    "windowVisibility": 100
+}
+==================================================================================================
+
+[INFO: 12 September 2025 | 10:24:35 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
+
+JSON File has been updated. All previous data entries have been overridden.
+
+JSON ENTRY:
+{
+    "WindowVisibility": 100,
+    "darkMode": true,
+    "fontSize12Hr": 50,
+    "fontSizeDate": 30,
+    "fontSizeTime": 70,
+    "fontType": "LTAIdentity",
+    "framelessWindowBar": false,
+    "is24Hr": false,
+    "isFloating": false,
+    "memHWindowSize": 408,
+    "memVWindowSize": 124,
+    "showDate": false,
+    "showHr12": true,
+    "showSecs": true,
+    "useNativeTheme": true,
+    "windowVisibility": 100
+}
+==================================================================================================
+
+[INFO: 12 September 2025 | 10:24:35 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
+
+JSON File has been updated. All previous data entries have been overridden.
+
+JSON ENTRY:
+{
+    "WindowVisibility": 100,
+    "darkMode": true,
+    "fontSize12Hr": 50,
+    "fontSizeDate": 30,
+    "fontSizeTime": 70,
+    "fontType": "LTAIdentity",
+    "framelessWindowBar": false,
+    "is24Hr": false,
+    "isFloating": false,
+    "memHWindowSize": 410,
+    "memVWindowSize": 124,
+    "showDate": false,
+    "showHr12": true,
+    "showSecs": true,
+    "useNativeTheme": true,
+    "windowVisibility": 100
+}
+==================================================================================================
+
+[INFO: 12 September 2025 | 10:24:35 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
+
+JSON File has been updated. All previous data entries have been overridden.
+
+JSON ENTRY:
+{
+    "WindowVisibility": 100,
+    "darkMode": true,
+    "fontSize12Hr": 50,
+    "fontSizeDate": 30,
+    "fontSizeTime": 70,
+    "fontType": "LTAIdentity",
+    "framelessWindowBar": false,
+    "is24Hr": false,
+    "isFloating": false,
+    "memHWindowSize": 412,
+    "memVWindowSize": 124,
+    "showDate": false,
+    "showHr12": true,
+    "showSecs": true,
+    "useNativeTheme": true,
+    "windowVisibility": 100
+}
+==================================================================================================
+
+[INFO: 12 September 2025 | 10:24:35 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
+
+JSON File has been updated. All previous data entries have been overridden.
+
+JSON ENTRY:
+{
+    "WindowVisibility": 100,
+    "darkMode": true,
+    "fontSize12Hr": 50,
+    "fontSizeDate": 30,
+    "fontSizeTime": 70,
+    "fontType": "LTAIdentity",
+    "framelessWindowBar": false,
+    "is24Hr": false,
+    "isFloating": false,
+    "memHWindowSize": 414,
+    "memVWindowSize": 124,
+    "showDate": false,
+    "showHr12": true,
+    "showSecs": true,
+    "useNativeTheme": true,
+    "windowVisibility": 100
+}
+==================================================================================================
+
+[INFO: 12 September 2025 | 10:24:35 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
+
+JSON File has been updated. All previous data entries have been overridden.
+
+JSON ENTRY:
+{
+    "WindowVisibility": 100,
+    "darkMode": true,
+    "fontSize12Hr": 50,
+    "fontSizeDate": 30,
+    "fontSizeTime": 70,
+    "fontType": "LTAIdentity",
+    "framelessWindowBar": false,
+    "is24Hr": false,
+    "isFloating": false,
+    "memHWindowSize": 416,
+    "memVWindowSize": 124,
+    "showDate": false,
+    "showHr12": true,
+    "showSecs": true,
+    "useNativeTheme": true,
+    "windowVisibility": 100
+}
+==================================================================================================
+
+[INFO: 12 September 2025 | 10:24:35 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
+
+JSON File has been updated. All previous data entries have been overridden.
+
+JSON ENTRY:
+{
+    "WindowVisibility": 100,
+    "darkMode": true,
+    "fontSize12Hr": 50,
+    "fontSizeDate": 30,
+    "fontSizeTime": 70,
+    "fontType": "LTAIdentity",
+    "framelessWindowBar": false,
+    "is24Hr": false,
+    "isFloating": false,
+    "memHWindowSize": 417,
+    "memVWindowSize": 124,
+    "showDate": false,
+    "showHr12": true,
+    "showSecs": true,
+    "useNativeTheme": true,
+    "windowVisibility": 100
+}
+==================================================================================================
+
+[INFO: 12 September 2025 | 10:24:35 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
+
+JSON File has been updated. All previous data entries have been overridden.
+
+JSON ENTRY:
+{
+    "WindowVisibility": 100,
+    "darkMode": true,
+    "fontSize12Hr": 50,
+    "fontSizeDate": 30,
+    "fontSizeTime": 70,
+    "fontType": "LTAIdentity",
+    "framelessWindowBar": false,
+    "is24Hr": false,
+    "isFloating": false,
+    "memHWindowSize": 418,
+    "memVWindowSize": 124,
+    "showDate": false,
+    "showHr12": true,
+    "showSecs": true,
+    "useNativeTheme": true,
+    "windowVisibility": 100
+}
+==================================================================================================
+
+[INFO: 12 September 2025 | 10:24:35 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
+
+JSON File has been updated. All previous data entries have been overridden.
+
+JSON ENTRY:
+{
+    "WindowVisibility": 100,
+    "darkMode": true,
+    "fontSize12Hr": 50,
+    "fontSizeDate": 30,
+    "fontSizeTime": 70,
+    "fontType": "LTAIdentity",
+    "framelessWindowBar": false,
+    "is24Hr": false,
+    "isFloating": false,
+    "memHWindowSize": 420,
+    "memVWindowSize": 124,
+    "showDate": false,
+    "showHr12": true,
+    "showSecs": true,
+    "useNativeTheme": true,
+    "windowVisibility": 100
+}
+==================================================================================================
+
+[INFO: 12 September 2025 | 10:24:35 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
+
+JSON File has been updated. All previous data entries have been overridden.
+
+JSON ENTRY:
+{
+    "WindowVisibility": 100,
+    "darkMode": true,
+    "fontSize12Hr": 50,
+    "fontSizeDate": 30,
+    "fontSizeTime": 70,
+    "fontType": "LTAIdentity",
+    "framelessWindowBar": false,
+    "is24Hr": false,
+    "isFloating": false,
+    "memHWindowSize": 421,
+    "memVWindowSize": 124,
+    "showDate": false,
+    "showHr12": true,
+    "showSecs": true,
+    "useNativeTheme": true,
+    "windowVisibility": 100
+}
+==================================================================================================
+
+[INFO: 12 September 2025 | 10:24:35 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
+
+JSON File has been updated. All previous data entries have been overridden.
+
+JSON ENTRY:
+{
+    "WindowVisibility": 100,
+    "darkMode": true,
+    "fontSize12Hr": 50,
+    "fontSizeDate": 30,
+    "fontSizeTime": 70,
+    "fontType": "LTAIdentity",
+    "framelessWindowBar": false,
+    "is24Hr": false,
+    "isFloating": false,
+    "memHWindowSize": 423,
+    "memVWindowSize": 124,
+    "showDate": false,
+    "showHr12": true,
+    "showSecs": true,
+    "useNativeTheme": true,
+    "windowVisibility": 100
+}
+==================================================================================================
+
+[INFO: 12 September 2025 | 10:24:35 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
+
+JSON File has been updated. All previous data entries have been overridden.
+
+JSON ENTRY:
+{
+    "WindowVisibility": 100,
+    "darkMode": true,
+    "fontSize12Hr": 50,
+    "fontSizeDate": 30,
+    "fontSizeTime": 70,
+    "fontType": "LTAIdentity",
+    "framelessWindowBar": false,
+    "is24Hr": false,
+    "isFloating": false,
+    "memHWindowSize": 424,
+    "memVWindowSize": 124,
+    "showDate": false,
+    "showHr12": true,
+    "showSecs": true,
+    "useNativeTheme": true,
+    "windowVisibility": 100
+}
+==================================================================================================
+
+[INFO: 12 September 2025 | 10:24:35 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
+
+JSON File has been updated. All previous data entries have been overridden.
+
+JSON ENTRY:
+{
+    "WindowVisibility": 100,
+    "darkMode": true,
+    "fontSize12Hr": 50,
+    "fontSizeDate": 30,
+    "fontSizeTime": 70,
+    "fontType": "LTAIdentity",
+    "framelessWindowBar": false,
+    "is24Hr": false,
+    "isFloating": false,
+    "memHWindowSize": 425,
+    "memVWindowSize": 124,
+    "showDate": false,
+    "showHr12": true,
+    "showSecs": true,
+    "useNativeTheme": true,
+    "windowVisibility": 100
+}
+==================================================================================================
+
+[INFO: 12 September 2025 | 10:24:35 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
+
+JSON File has been updated. All previous data entries have been overridden.
+
+JSON ENTRY:
+{
+    "WindowVisibility": 100,
+    "darkMode": true,
+    "fontSize12Hr": 50,
+    "fontSizeDate": 30,
+    "fontSizeTime": 70,
+    "fontType": "LTAIdentity",
+    "framelessWindowBar": false,
+    "is24Hr": false,
+    "isFloating": false,
+    "memHWindowSize": 427,
+    "memVWindowSize": 124,
+    "showDate": false,
+    "showHr12": true,
+    "showSecs": true,
+    "useNativeTheme": true,
+    "windowVisibility": 100
+}
+==================================================================================================
+
+[INFO: 12 September 2025 | 10:24:35 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
+
+JSON File has been updated. All previous data entries have been overridden.
+
+JSON ENTRY:
+{
+    "WindowVisibility": 100,
+    "darkMode": true,
+    "fontSize12Hr": 50,
+    "fontSizeDate": 30,
+    "fontSizeTime": 70,
+    "fontType": "LTAIdentity",
+    "framelessWindowBar": false,
+    "is24Hr": false,
+    "isFloating": false,
+    "memHWindowSize": 428,
+    "memVWindowSize": 124,
+    "showDate": false,
+    "showHr12": true,
+    "showSecs": true,
+    "useNativeTheme": true,
+    "windowVisibility": 100
+}
+==================================================================================================
+
+[INFO: 12 September 2025 | 10:24:35 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
+
+JSON File has been updated. All previous data entries have been overridden.
+
+JSON ENTRY:
+{
+    "WindowVisibility": 100,
+    "darkMode": true,
+    "fontSize12Hr": 50,
+    "fontSizeDate": 30,
+    "fontSizeTime": 70,
+    "fontType": "LTAIdentity",
+    "framelessWindowBar": false,
+    "is24Hr": false,
+    "isFloating": false,
+    "memHWindowSize": 429,
+    "memVWindowSize": 124,
+    "showDate": false,
+    "showHr12": true,
+    "showSecs": true,
+    "useNativeTheme": true,
+    "windowVisibility": 100
+}
+==================================================================================================
+
+[INFO: 12 September 2025 | 10:24:35 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
+
+JSON File has been updated. All previous data entries have been overridden.
+
+JSON ENTRY:
+{
+    "WindowVisibility": 100,
+    "darkMode": true,
+    "fontSize12Hr": 50,
+    "fontSizeDate": 30,
+    "fontSizeTime": 70,
+    "fontType": "LTAIdentity",
+    "framelessWindowBar": false,
+    "is24Hr": false,
+    "isFloating": false,
+    "memHWindowSize": 430,
+    "memVWindowSize": 124,
+    "showDate": false,
+    "showHr12": true,
+    "showSecs": true,
+    "useNativeTheme": true,
+    "windowVisibility": 100
+}
+==================================================================================================
+
+[INFO: 12 September 2025 | 10:24:35 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
+
+JSON File has been updated. All previous data entries have been overridden.
+
+JSON ENTRY:
+{
+    "WindowVisibility": 100,
+    "darkMode": true,
+    "fontSize12Hr": 50,
+    "fontSizeDate": 30,
+    "fontSizeTime": 70,
+    "fontType": "LTAIdentity",
+    "framelessWindowBar": false,
+    "is24Hr": false,
+    "isFloating": false,
+    "memHWindowSize": 431,
+    "memVWindowSize": 124,
+    "showDate": false,
+    "showHr12": true,
+    "showSecs": true,
+    "useNativeTheme": true,
+    "windowVisibility": 100
+}
+==================================================================================================
+
+[INFO: 12 September 2025 | 10:24:35 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
+
+JSON File has been updated. All previous data entries have been overridden.
+
+JSON ENTRY:
+{
+    "WindowVisibility": 100,
+    "darkMode": true,
+    "fontSize12Hr": 50,
+    "fontSizeDate": 30,
+    "fontSizeTime": 70,
+    "fontType": "LTAIdentity",
+    "framelessWindowBar": false,
+    "is24Hr": false,
+    "isFloating": false,
+    "memHWindowSize": 432,
+    "memVWindowSize": 124,
+    "showDate": false,
+    "showHr12": true,
+    "showSecs": true,
+    "useNativeTheme": true,
+    "windowVisibility": 100
+}
+==================================================================================================
+
+[INFO: 12 September 2025 | 10:24:35 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
+
+JSON File has been updated. All previous data entries have been overridden.
+
+JSON ENTRY:
+{
+    "WindowVisibility": 100,
+    "darkMode": true,
+    "fontSize12Hr": 50,
+    "fontSizeDate": 30,
+    "fontSizeTime": 70,
+    "fontType": "LTAIdentity",
+    "framelessWindowBar": false,
+    "is24Hr": false,
+    "isFloating": false,
+    "memHWindowSize": 433,
+    "memVWindowSize": 124,
+    "showDate": false,
+    "showHr12": true,
+    "showSecs": true,
+    "useNativeTheme": true,
+    "windowVisibility": 100
+}
 ==================================================================================================

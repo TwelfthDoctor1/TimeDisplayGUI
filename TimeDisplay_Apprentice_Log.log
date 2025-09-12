@@ -1,75 +1,85 @@
 TwelfthDoctor1's Apprentice Log - TimeDisplay
-Apprentice Version: Developer Version 1.5.0
+Apprentice Version: Developer Version 1.6.0
 ==================================================================================================
-Creation Date: 24 April 2025 [UK] | 2025 April 24 [US]
-Creation Time: 12:11:26 PM
+Creation Date: 12 September 2025 [UK] | September 12 2025 [US]
+Creation Time: 10:24:38 AM
 ==================================================================================================
 NEW LOG ENTRIES WILL BE APPENDED BELOW. ALL DATETIME WILL FOLLOW THE UK FORMAT.
 ==================================================================================================
 Apprentice Log under Developer Control.
 ==================================================================================================
 
-[INFO: 24 April 2025 | 12:11:27 PM] JSONHandler Class @ TimeDisplay_Config | None]
+[INFO: 12 September 2025 | 10:24:38 AM] JSONHandler Class @ TimeDisplay_Config | None]
 
-File creation of Log at: /Volumes/Transfer/GitHub/TimeDisplayGUI/TimeDisplay_Apprentice_Log.log
+File creation of Log at: /Users/twelfthdoctor1/GitHub/TimeDisplayGUI/TimeDisplay_Apprentice_Log.log
 ==================================================================================================
 
-[INFO: 24 April 2025 | 12:11:27 PM] JSONHandler Class @ TimeDisplay_Config | None]
+[INFO: 12 September 2025 | 10:24:38 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
 
-JSON File (TimeDisplay_Config) already exists in /Users/twelfthdoctor1/TimeDisplay_Config.json. Skipping...
+JSON File (TimeDisplay_Config) already exists in /Users/twelfthdoctor1/GitHub/TimeDisplayGUI/TimeDisplay_Config.json. Skipping...
 ==================================================================================================
 
-[INFO: 24 April 2025 | 12:11:27 PM] JSONHandler Class @ TimeDisplay_Config | None]
+[INFO: 12 September 2025 | 10:24:38 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
 
-Formulated & ascertained JSON File Data in /Users/twelfthdoctor1/TimeDisplay_Config.json. Data can now be acquired/set with get/set functions.
+Formulated & ascertained JSON File Data in /Users/twelfthdoctor1/GitHub/TimeDisplayGUI/TimeDisplay_Config.json. Data can now be acquired/set with get/set functions.
 ==================================================================================================
 
-[INFO: 24 April 2025 | 12:11:27 PM] JSONHandler Class @ TimeDisplay_Config | None]
+[INFO: 12 September 2025 | 10:24:38 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
 
 Config Check: All keys accounted for. No key appending required.
 ==================================================================================================
 
-[INFO: 24 April 2025 | 12:11:27 PM] JSONHandler Class @ TimeDisplay_Config | None]
+[INFO: 12 September 2025 | 10:24:38 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
 
-JSON File (TimeDisplay_Config) already exists in /Users/twelfthdoctor1/TimeDisplay_Config.json. Skipping...
+JSON File (TimeDisplay_Config) already exists in /Users/twelfthdoctor1/GitHub/TimeDisplayGUI/TimeDisplay_Config.json. Skipping...
 ==================================================================================================
 
-[INFO: 24 April 2025 | 12:11:28 PM] JSONHandler Class @ TimeDisplay_Config | None]
+[INFO: 12 September 2025 | 10:24:38 AM] JSONHandler Class @ TimeDisplay_Config | None]
 
-File creation of Log at: /Volumes/Transfer/GitHub/TimeDisplayGUI/TimeDisplay_Apprentice_Log.log
+File creation of Log at: /Users/twelfthdoctor1/GitHub/TimeDisplayGUI/TimeDisplay_Apprentice_Log.log
 ==================================================================================================
 
-[INFO: 24 April 2025 | 12:11:28 PM] JSONHandler Class @ TimeDisplay_Config | None]
+[INFO: 12 September 2025 | 10:24:38 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
 
-JSON File (TimeDisplay_Config) already exists in /Users/twelfthdoctor1/TimeDisplay_Config.json. Skipping...
+JSON File (TimeDisplay_Config) already exists in /Users/twelfthdoctor1/GitHub/TimeDisplayGUI/TimeDisplay_Config.json. Skipping...
 ==================================================================================================
 
-[INFO: 24 April 2025 | 12:11:28 PM] JSONHandler Class @ TimeDisplay_Config | None]
+[INFO: 12 September 2025 | 10:24:38 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
 
-Formulated & ascertained JSON File Data in /Users/twelfthdoctor1/TimeDisplay_Config.json. Data can now be acquired/set with get/set functions.
+Formulated & ascertained JSON File Data in /Users/twelfthdoctor1/GitHub/TimeDisplayGUI/TimeDisplay_Config.json. Data can now be acquired/set with get/set functions.
 ==================================================================================================
 
-[INFO: 24 April 2025 | 12:11:28 PM] JSONHandler Class @ TimeDisplay_Config | None]
+[INFO: 12 September 2025 | 10:24:38 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
 
 Config Check: All keys accounted for. No key appending required.
 ==================================================================================================
 
-[INFO: 24 April 2025 | 12:11:28 PM] JSONHandler Class @ TimeDisplay_Config | None]
+[INFO: 12 September 2025 | 10:24:38 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
 
-Formulated & ascertained JSON File Data in /Users/twelfthdoctor1/TimeDisplay_Config.json. Data can now be acquired/set with get/set functions.
+Formulated & ascertained JSON File Data in /Users/twelfthdoctor1/GitHub/TimeDisplayGUI/TimeDisplay_Config.json. Data can now be acquired/set with get/set functions.
 ==================================================================================================
 
-[INFO: 24 April 2025 | 12:11:28 PM] JSONHandler Class @ TimeDisplay_Config | None]
+[INFO: 12 September 2025 | 10:24:38 AM] ConfigJSONHandler Class @ TimeDisplay_Config | None]
 
 JSON File has been updated. All previous data entries have been overridden.
-==================================================================================================
 
-[INFO: 24 April 2025 | 12:11:34 PM] JSONHandler Class @ TimeDisplay_Config | None]
-
-JSON File has been updated. All previous data entries have been overridden.
-==================================================================================================
-
-[INFO: 24 April 2025 | 12:11:40 PM] JSONHandler Class @ TimeDisplay_Config | None]
-
-JSON File has been updated. All previous data entries have been overridden.
+JSON ENTRY:
+{
+    "WindowVisibility": 100,
+    "darkMode": true,
+    "fontSize12Hr": 50,
+    "fontSizeDate": 30,
+    "fontSizeTime": 70,
+    "fontType": "LTAIdentity",
+    "framelessWindowBar": false,
+    "is24Hr": false,
+    "isFloating": false,
+    "memHWindowSize": 433,
+    "memVWindowSize": 195,
+    "showDate": false,
+    "showHr12": true,
+    "showSecs": true,
+    "useNativeTheme": true,
+    "windowVisibility": 100
+}
 ==================================================================================================

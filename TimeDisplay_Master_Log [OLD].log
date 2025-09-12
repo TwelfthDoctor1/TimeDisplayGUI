@@ -1,285 +1,180 @@
 TwelfthDoctor1's Master Log - TimeDisplay
-Apprentice Version: Developer Version 1.5.0
+Apprentice Version: Developer Version 1.6.0
 ==================================================================================================
-Creation Date: 24 April 2025 [UK] | 2025 April 24 [US]
-Creation Time: 11:57:47 AM
+Creation Date: 12 September 2025 [UK] | September 12 2025 [US]
+Creation Time: 10:24:29 AM
 ==================================================================================================
 NEW LOG ENTRIES WILL BE APPENDED BELOW. ALL DATETIME WILL FOLLOW THE UK FORMAT.
 ==================================================================================================
 MASTER LOG IS USED UNDER THE DIGRESSION OF TWELFTHDOCTOR1 UNDER THE USAGE OF DEBUG & TESTING.
 ==================================================================================================
 
-[INFO: 24 April 2025 | 11:57:47 AM] JSONHandler Class @ TimeDisplay_Config | None]
+[INFO: 12 September 2025 | 10:24:29 AM] JSONHandler Class @ TimeDisplay_Config | None]
 
-File creation of Log at: /Volumes/Transfer/GitHub/TimeDisplayGUI/TimeDisplay_Master_Log.log
+File creation of Log at: /Users/twelfthdoctor1/GitHub/TimeDisplayGUI/TimeDisplay_Master_Log.log
 ==================================================================================================
 
-[INFO: 24 April 2025 | 11:57:47 AM] JSONHandler Class @ TimeDisplay_Config | None]
+[INFO: 12 September 2025 | 10:24:29 AM] JSONHandler Class @ TimeDisplay_Config | None]
 
 DEBUG: CHECK -> fontType
 ==================================================================================================
 
-[INFO: 24 April 2025 | 11:57:47 AM] JSONHandler Class @ TimeDisplay_Config | None]
+[INFO: 12 September 2025 | 10:24:29 AM] JSONHandler Class @ TimeDisplay_Config | None]
 
 DEBUG: CHECK -> is24Hr
 ==================================================================================================
 
-[INFO: 24 April 2025 | 11:57:47 AM] JSONHandler Class @ TimeDisplay_Config | None]
+[INFO: 12 September 2025 | 10:24:29 AM] JSONHandler Class @ TimeDisplay_Config | None]
 
 DEBUG: CHECK -> darkMode
 ==================================================================================================
 
-[INFO: 24 April 2025 | 11:57:47 AM] JSONHandler Class @ TimeDisplay_Config | None]
+[INFO: 12 September 2025 | 10:24:29 AM] JSONHandler Class @ TimeDisplay_Config | None]
 
 DEBUG: CHECK -> isFloating
 ==================================================================================================
 
-[INFO: 24 April 2025 | 11:57:47 AM] JSONHandler Class @ TimeDisplay_Config | None]
+[INFO: 12 September 2025 | 10:24:29 AM] JSONHandler Class @ TimeDisplay_Config | None]
 
 DEBUG: CHECK -> fontSizeTime
 ==================================================================================================
 
-[INFO: 24 April 2025 | 11:57:47 AM] JSONHandler Class @ TimeDisplay_Config | None]
+[INFO: 12 September 2025 | 10:24:29 AM] JSONHandler Class @ TimeDisplay_Config | None]
 
 DEBUG: CHECK -> fontSize12Hr
 ==================================================================================================
 
-[INFO: 24 April 2025 | 11:57:47 AM] JSONHandler Class @ TimeDisplay_Config | None]
+[INFO: 12 September 2025 | 10:24:29 AM] JSONHandler Class @ TimeDisplay_Config | None]
 
 DEBUG: CHECK -> fontSizeDate
 ==================================================================================================
 
-[INFO: 24 April 2025 | 11:57:47 AM] JSONHandler Class @ TimeDisplay_Config | None]
+[INFO: 12 September 2025 | 10:24:29 AM] JSONHandler Class @ TimeDisplay_Config | None]
 
 DEBUG: CHECK -> showHr12
 ==================================================================================================
 
-[INFO: 24 April 2025 | 11:57:47 AM] JSONHandler Class @ TimeDisplay_Config | None]
+[INFO: 12 September 2025 | 10:24:29 AM] JSONHandler Class @ TimeDisplay_Config | None]
 
 DEBUG: CHECK -> showSecs
 ==================================================================================================
 
-[INFO: 24 April 2025 | 11:57:47 AM] JSONHandler Class @ TimeDisplay_Config | None]
+[INFO: 12 September 2025 | 10:24:29 AM] JSONHandler Class @ TimeDisplay_Config | None]
 
 DEBUG: CHECK -> showDate
 ==================================================================================================
 
-[INFO: 24 April 2025 | 11:57:47 AM] JSONHandler Class @ TimeDisplay_Config | None]
+[INFO: 12 September 2025 | 10:24:29 AM] JSONHandler Class @ TimeDisplay_Config | None]
 
 DEBUG: CHECK -> memHWindowSize
 ==================================================================================================
 
-[INFO: 24 April 2025 | 11:57:47 AM] JSONHandler Class @ TimeDisplay_Config | None]
+[INFO: 12 September 2025 | 10:24:29 AM] JSONHandler Class @ TimeDisplay_Config | None]
 
 DEBUG: CHECK -> memVWindowSize
 ==================================================================================================
 
-[INFO: 24 April 2025 | 11:57:47 AM] JSONHandler Class @ TimeDisplay_Config | None]
+[INFO: 12 September 2025 | 10:24:29 AM] JSONHandler Class @ TimeDisplay_Config | None]
 
-DEBUG: KEYCHECK MISSING 0 KEYS: []
+DEBUG: CHECK -> windowVisibility
 ==================================================================================================
 
-[INFO: 24 April 2025 | 11:57:48 AM] JSONHandler Class @ TimeDisplay_Config | None]
+[INFO: 12 September 2025 | 10:24:29 AM] JSONHandler Class @ TimeDisplay_Config | None]
 
-File creation of Log at: /Volumes/Transfer/GitHub/TimeDisplayGUI/TimeDisplay_Master_Log.log
+DEBUG: CHECK -> framelessWindowBar
 ==================================================================================================
 
-[INFO: 24 April 2025 | 11:57:48 AM] JSONHandler Class @ TimeDisplay_Config | None]
+[INFO: 12 September 2025 | 10:24:29 AM] JSONHandler Class @ TimeDisplay_Config | None]
+
+DEBUG: CHECK -> useNativeTheme
+==================================================================================================
+
+[INFO: 12 September 2025 | 10:24:29 AM] JSONHandler Class @ TimeDisplay_Config | None]
+
+DEBUG: KEY CHECK MISSING 0 KEYS: None
+==================================================================================================
+
+[INFO: 12 September 2025 | 10:24:29 AM] JSONHandler Class @ TimeDisplay_Config | None]
+
+File creation of Log at: /Users/twelfthdoctor1/GitHub/TimeDisplayGUI/TimeDisplay_Master_Log.log
+==================================================================================================
+
+[INFO: 12 September 2025 | 10:24:29 AM] JSONHandler Class @ TimeDisplay_Config | None]
 
 DEBUG: CHECK -> fontType
 ==================================================================================================
 
-[INFO: 24 April 2025 | 11:57:48 AM] JSONHandler Class @ TimeDisplay_Config | None]
+[INFO: 12 September 2025 | 10:24:29 AM] JSONHandler Class @ TimeDisplay_Config | None]
 
 DEBUG: CHECK -> is24Hr
 ==================================================================================================
 
-[INFO: 24 April 2025 | 11:57:48 AM] JSONHandler Class @ TimeDisplay_Config | None]
+[INFO: 12 September 2025 | 10:24:29 AM] JSONHandler Class @ TimeDisplay_Config | None]
 
 DEBUG: CHECK -> darkMode
 ==================================================================================================
 
-[INFO: 24 April 2025 | 11:57:48 AM] JSONHandler Class @ TimeDisplay_Config | None]
+[INFO: 12 September 2025 | 10:24:29 AM] JSONHandler Class @ TimeDisplay_Config | None]
 
 DEBUG: CHECK -> isFloating
 ==================================================================================================
 
-[INFO: 24 April 2025 | 11:57:48 AM] JSONHandler Class @ TimeDisplay_Config | None]
+[INFO: 12 September 2025 | 10:24:29 AM] JSONHandler Class @ TimeDisplay_Config | None]
 
 DEBUG: CHECK -> fontSizeTime
 ==================================================================================================
 
-[INFO: 24 April 2025 | 11:57:48 AM] JSONHandler Class @ TimeDisplay_Config | None]
+[INFO: 12 September 2025 | 10:24:29 AM] JSONHandler Class @ TimeDisplay_Config | None]
 
 DEBUG: CHECK -> fontSize12Hr
 ==================================================================================================
 
-[INFO: 24 April 2025 | 11:57:48 AM] JSONHandler Class @ TimeDisplay_Config | None]
+[INFO: 12 September 2025 | 10:24:29 AM] JSONHandler Class @ TimeDisplay_Config | None]
 
 DEBUG: CHECK -> fontSizeDate
 ==================================================================================================
 
-[INFO: 24 April 2025 | 11:57:48 AM] JSONHandler Class @ TimeDisplay_Config | None]
+[INFO: 12 September 2025 | 10:24:29 AM] JSONHandler Class @ TimeDisplay_Config | None]
 
 DEBUG: CHECK -> showHr12
 ==================================================================================================
 
-[INFO: 24 April 2025 | 11:57:48 AM] JSONHandler Class @ TimeDisplay_Config | None]
+[INFO: 12 September 2025 | 10:24:29 AM] JSONHandler Class @ TimeDisplay_Config | None]
 
 DEBUG: CHECK -> showSecs
 ==================================================================================================
 
-[INFO: 24 April 2025 | 11:57:48 AM] JSONHandler Class @ TimeDisplay_Config | None]
+[INFO: 12 September 2025 | 10:24:29 AM] JSONHandler Class @ TimeDisplay_Config | None]
 
 DEBUG: CHECK -> showDate
 ==================================================================================================
 
-[INFO: 24 April 2025 | 11:57:48 AM] JSONHandler Class @ TimeDisplay_Config | None]
+[INFO: 12 September 2025 | 10:24:29 AM] JSONHandler Class @ TimeDisplay_Config | None]
 
 DEBUG: CHECK -> memHWindowSize
 ==================================================================================================
 
-[INFO: 24 April 2025 | 11:57:48 AM] JSONHandler Class @ TimeDisplay_Config | None]
+[INFO: 12 September 2025 | 10:24:29 AM] JSONHandler Class @ TimeDisplay_Config | None]
 
 DEBUG: CHECK -> memVWindowSize
 ==================================================================================================
 
-[INFO: 24 April 2025 | 11:57:48 AM] JSONHandler Class @ TimeDisplay_Config | None]
+[INFO: 12 September 2025 | 10:24:29 AM] JSONHandler Class @ TimeDisplay_Config | None]
 
-DEBUG: KEYCHECK MISSING 0 KEYS: []
+DEBUG: CHECK -> windowVisibility
 ==================================================================================================
 
-[INFO: 24 April 2025 | 11:57:57 AM] JSONHandler Class @ TimeDisplay_Config | None]
+[INFO: 12 September 2025 | 10:24:29 AM] JSONHandler Class @ TimeDisplay_Config | None]
 
-File creation of Log at: /Volumes/Transfer/GitHub/TimeDisplayGUI/TimeDisplay_Master_Log.log
+DEBUG: CHECK -> framelessWindowBar
 ==================================================================================================
 
-[INFO: 24 April 2025 | 11:57:57 AM] JSONHandler Class @ TimeDisplay_Config | None]
+[INFO: 12 September 2025 | 10:24:29 AM] JSONHandler Class @ TimeDisplay_Config | None]
 
-DEBUG: CHECK -> fontType
+DEBUG: CHECK -> useNativeTheme
 ==================================================================================================
 
-[INFO: 24 April 2025 | 11:57:57 AM] JSONHandler Class @ TimeDisplay_Config | None]
+[INFO: 12 September 2025 | 10:24:29 AM] JSONHandler Class @ TimeDisplay_Config | None]
 
-DEBUG: CHECK -> is24Hr
-==================================================================================================
-
-[INFO: 24 April 2025 | 11:57:57 AM] JSONHandler Class @ TimeDisplay_Config | None]
-
-DEBUG: CHECK -> darkMode
-==================================================================================================
-
-[INFO: 24 April 2025 | 11:57:57 AM] JSONHandler Class @ TimeDisplay_Config | None]
-
-DEBUG: CHECK -> isFloating
-==================================================================================================
-
-[INFO: 24 April 2025 | 11:57:57 AM] JSONHandler Class @ TimeDisplay_Config | None]
-
-DEBUG: CHECK -> fontSizeTime
-==================================================================================================
-
-[INFO: 24 April 2025 | 11:57:57 AM] JSONHandler Class @ TimeDisplay_Config | None]
-
-DEBUG: CHECK -> fontSize12Hr
-==================================================================================================
-
-[INFO: 24 April 2025 | 11:57:57 AM] JSONHandler Class @ TimeDisplay_Config | None]
-
-DEBUG: CHECK -> fontSizeDate
-==================================================================================================
-
-[INFO: 24 April 2025 | 11:57:57 AM] JSONHandler Class @ TimeDisplay_Config | None]
-
-DEBUG: CHECK -> showHr12
-==================================================================================================
-
-[INFO: 24 April 2025 | 11:57:57 AM] JSONHandler Class @ TimeDisplay_Config | None]
-
-DEBUG: CHECK -> showSecs
-==================================================================================================
-
-[INFO: 24 April 2025 | 11:57:57 AM] JSONHandler Class @ TimeDisplay_Config | None]
-
-DEBUG: CHECK -> showDate
-==================================================================================================
-
-[INFO: 24 April 2025 | 11:57:57 AM] JSONHandler Class @ TimeDisplay_Config | None]
-
-DEBUG: CHECK -> memHWindowSize
-==================================================================================================
-
-[INFO: 24 April 2025 | 11:57:57 AM] JSONHandler Class @ TimeDisplay_Config | None]
-
-DEBUG: CHECK -> memVWindowSize
-==================================================================================================
-
-[INFO: 24 April 2025 | 11:57:57 AM] JSONHandler Class @ TimeDisplay_Config | None]
-
-DEBUG: KEYCHECK MISSING 0 KEYS: []
-==================================================================================================
-
-[INFO: 24 April 2025 | 11:57:57 AM] JSONHandler Class @ TimeDisplay_Config | None]
-
-DEBUG: CHECK -> fontType
-==================================================================================================
-
-[INFO: 24 April 2025 | 11:57:57 AM] JSONHandler Class @ TimeDisplay_Config | None]
-
-DEBUG: CHECK -> is24Hr
-==================================================================================================
-
-[INFO: 24 April 2025 | 11:57:57 AM] JSONHandler Class @ TimeDisplay_Config | None]
-
-DEBUG: CHECK -> darkMode
-==================================================================================================
-
-[INFO: 24 April 2025 | 11:57:57 AM] JSONHandler Class @ TimeDisplay_Config | None]
-
-DEBUG: CHECK -> isFloating
-==================================================================================================
-
-[INFO: 24 April 2025 | 11:57:57 AM] JSONHandler Class @ TimeDisplay_Config | None]
-
-DEBUG: CHECK -> fontSizeTime
-==================================================================================================
-
-[INFO: 24 April 2025 | 11:57:57 AM] JSONHandler Class @ TimeDisplay_Config | None]
-
-DEBUG: CHECK -> fontSize12Hr
-==================================================================================================
-
-[INFO: 24 April 2025 | 11:57:57 AM] JSONHandler Class @ TimeDisplay_Config | None]
-
-DEBUG: CHECK -> fontSizeDate
-==================================================================================================
-
-[INFO: 24 April 2025 | 11:57:57 AM] JSONHandler Class @ TimeDisplay_Config | None]
-
-DEBUG: CHECK -> showHr12
-==================================================================================================
-
-[INFO: 24 April 2025 | 11:57:57 AM] JSONHandler Class @ TimeDisplay_Config | None]
-
-DEBUG: CHECK -> showSecs
-==================================================================================================
-
-[INFO: 24 April 2025 | 11:57:57 AM] JSONHandler Class @ TimeDisplay_Config | None]
-
-DEBUG: CHECK -> showDate
-==================================================================================================
-
-[INFO: 24 April 2025 | 11:57:57 AM] JSONHandler Class @ TimeDisplay_Config | None]
-
-DEBUG: CHECK -> memHWindowSize
-==================================================================================================
-
-[INFO: 24 April 2025 | 11:57:57 AM] JSONHandler Class @ TimeDisplay_Config | None]
-
-DEBUG: CHECK -> memVWindowSize
-==================================================================================================
-
-[INFO: 24 April 2025 | 11:57:57 AM] JSONHandler Class @ TimeDisplay_Config | None]
-
-DEBUG: KEYCHECK MISSING 0 KEYS: []
+DEBUG: KEY CHECK MISSING 0 KEYS: None
 ==================================================================================================

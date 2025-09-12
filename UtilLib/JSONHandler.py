@@ -14,7 +14,7 @@ class JSONHandler:
     A class that is able to acquire JSON data from GitHub or from JSONLib.
     """
 
-    def __init__(self, json_data_name: str, json_dir: Path or str = ""):
+    def __init__(self, json_data_name: str, json_dir: Path | str = ""):
         """
         Initialise JSONHandler to acquire data.
         :param json_data_name: Name of JSON File, without .json suffix
@@ -47,10 +47,12 @@ class JSONHandler:
         Generate the JSON File should the JSON File not exist.
         If the file exists, it will be skipped.
 
+        To check if JSON file exists only, use check_json_exist instead.
+
         :param data_dict: Data in Dictionary Form
         :return:
         """
-        if os.path.exists(self.json_fp) is False:
+        if not os.path.exists(self.json_fp):
 
             self.logger.info(f"JSON File ({self.json}) does not exist. Creating in {self.json_fp}...")
 
@@ -69,12 +71,12 @@ class JSONHandler:
         :return:
         """
         with open(self.json_fp, "w") as json_file:
-            print(json_dump(self.json_data))
             json_file.write(json_dump(self.json_data))
             json_file.close()
 
         self.logger.info(
-            "JSON File has been updated. All previous data entries have been overridden."
+            f"JSON File has been updated. All previous data entries have been overridden."
+            f"\n\nJSON ENTRY:\n{json_dump(self.json_data)}"
         )
 
     def return_json(self):
@@ -131,3 +133,14 @@ class JSONHandler:
         :return:
         """
         del self.json_data[key]
+
+    def check_json_exist(self):
+        """
+        Test to check if JSON file exists.
+
+        Will not create a JSON file if it does not exist, use generate_json instead.
+        """
+        if os.path.exists(self.json_fp):
+            return True
+        else:
+            return False
