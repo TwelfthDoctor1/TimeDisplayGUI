@@ -304,6 +304,7 @@
     <addaction name="separator"/>
     <addaction name="actionIncrease_Font"/>
     <addaction name="actionDecrease_Font"/>
+    <addaction name="actionUse_Bold_Font"/>
     <addaction name="separator"/>
     <addaction name="action_Exit"/>
    </widget>
@@ -437,6 +438,17 @@
    </property>
    <property name="shortcut">
     <string>Ctrl+7</string>
+   </property>
+  </action>
+  <action name="actionUse_Bold_Font">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Use Bold Font</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+B</string>
    </property>
   </action>
  </widget>

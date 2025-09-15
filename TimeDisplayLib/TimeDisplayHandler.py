@@ -10,6 +10,19 @@ from Qt6UI.TimeDisplayUI import Ui_TimeDisplay
 from UtilLib.ConfigJSON import ConfigJSON, CONFIG_NAME
 
 
+font_conversion = {
+    "Normal" : [0, QFont.Weight.Normal],
+    "Thin": [1, QFont.Weight.Thin],
+    "Extra Light": [2, QFont.Weight.ExtraLight],
+    "Light": [3, QFont.Weight.Light],
+    "Medium": [4, QFont.Weight.Medium],
+    "DemiBold": [5, QFont.Weight.DemiBold],
+    "Bold": [6, QFont.Weight.Bold],
+    "Extra Bold": [7, QFont.Weight.ExtraBold],
+    "Black": [8, QFont.Weight.Black],
+}
+
+
 if hasattr(QtCore.Qt, 'AA_EnableHighDpiScaling'):
     QApplication.setAttribute(QtCore.Qt.AA_EnableHighDpiScaling, True)
 
@@ -27,7 +40,6 @@ class TimeDisplayGUI(QMainWindow):
         self.ui.setupUi(self)
         self.setWindowTitle("TimeDisplay")
         self._connectActions()
-        # self.setStyleSheet(QT_STYLESHEET_LIGHT)
 
         # Config Data
         self.json = ConfigJSON(CONFIG_NAME)
@@ -61,6 +73,9 @@ class TimeDisplayGUI(QMainWindow):
         self.timer.setInterval(10)
         self.timer.start()
 
+        # Frameless Window Movement Position
+        self.old_pos = self.pos()
+
     def _connectActions(self):
         self.ui.action_Settings.triggered.connect(self.openSettings)
         self.ui.action_Float_on_Top.triggered.connect(self.settingFloat)
@@ -74,6 +89,7 @@ class TimeDisplayGUI(QMainWindow):
         self.ui.actionDecrease_Font.triggered.connect(self.settingDecreaseFont)
         self.ui.actionFrameless.triggered.connect(self.settingFramelessWindowBar)
         self.ui.actionUse_Native_Theme.triggered.connect(self.settingUseNativeTheme)
+        self.ui.actionUse_Bold_Font.triggered.connect(self.settingUpdateUseBoldFont)
 
     def getTime(self):
         dt = datetime.datetime.now()
@@ -132,6 +148,16 @@ class TimeDisplayGUI(QMainWindow):
                 self.json.return_specific_json("fontType"), self.json.return_specific_json("fontSizeDate")
             )
 
+            # Set Bold
+            time_font.setBold(self.json.return_specific_json("useBoldFont"))
+            hr12notation_font.setBold(self.json.return_specific_json("useBoldFont"))
+            date_font.setBold(self.json.return_specific_json("useBoldFont"))
+
+            # Set Weight
+            time_font.setWeight(font_conversion[self.json.return_specific_json("fontWeight")][1])
+            hr12notation_font.setWeight(font_conversion[self.json.return_specific_json("fontWeight")][1])
+            date_font.setWeight(font_conversion[self.json.return_specific_json("fontWeight")][1])
+
             self.ui.Hour.setFont(time_font)
             self.ui.Mins.setFont(time_font)
             self.ui.Secs.setFont(time_font)
@@ -160,6 +186,7 @@ class TimeDisplayGUI(QMainWindow):
         self.ui.actionDark_Mode.setChecked(self.json.return_specific_json("darkMode"))
         self.ui.actionFrameless.setChecked(self.json.return_specific_json("framelessWindowBar"))
         self.ui.actionUse_Native_Theme.setChecked(self.json.return_specific_json("useNativeTheme"))
+        self.ui.actionUse_Bold_Font.setChecked(self.json.return_specific_json("useBoldFont"))
 
     def onFloatChange(self):
         if self.json.return_specific_json("isFloating") is True:
@@ -224,6 +251,10 @@ class TimeDisplayGUI(QMainWindow):
         self.json.update_specific_json("fontSize12Hr", self.json.return_specific_json("fontSize12Hr") - 1)
         self.json.update_json_file()
 
+    def settingUpdateUseBoldFont(self):
+        self.json.update_specific_json("useBoldFont", self.ui.actionUse_Bold_Font.isChecked())
+        self.json.update_json_file()
+
     def resizeEvent(self, a0: QResizeEvent):
         super().resizeEvent(a0)
         size = self.size()
@@ -256,6 +287,14 @@ class TimeDisplayGUI(QMainWindow):
         self.setWindowFlag(Qt.WindowType.FramelessWindowHint, self.json.return_specific_json("framelessWindowBar"))
         self.show()
 
+    def mousePressEvent(self, a0):
+        self.old_pos = a0.globalPosition().toPoint()
+
+    def mouseMoveEvent(self, a0):
+        self.move(self.pos() + a0.globalPosition().toPoint() - self.old_pos)
+        self.old_pos = a0.globalPosition().toPoint()
+        a0.accept()
+
 
 class TimeDisplaySettings(QDialog):
     def __init__(self, parent=None):
@@ -285,11 +324,22 @@ class TimeDisplaySettings(QDialog):
         self.ui.WindowVisibilitySlider.setValue(self.json.return_specific_json("windowVisibility"))
         self.ui.setFrameless.setChecked(self.json.return_specific_json("framelessWindowBar"))
         self.ui.setUseNativeTheme.setChecked(self.json.return_specific_json("useNativeTheme"))
+        self.ui.UseBoldFont.setChecked(self.json.return_specific_json("useBoldFont"))
+        self.ui.FontWeightSelection.setCurrentIndex(font_conversion[self.json.return_specific_json("fontWeight")][0])
 
         # Font
         if self.json.return_specific_json("fontType") is not None:
             font = QFont(self.json.return_specific_json("fontType"), 20)
             title_font = QFont(self.json.return_specific_json("fontType"), 30)
+
+            # Set Bold
+            font.setBold(self.json.return_specific_json("useBoldFont"))
+            title_font.setBold(self.json.return_specific_json("useNativeTheme"))
+
+            # Set Weight
+            font.setWeight(font_conversion[self.json.return_specific_json("fontWeight")][1])
+            title_font.setWeight(font_conversion[self.json.return_specific_json("fontWeight")][1])
+
             self.ui.TimeSize.setFont(font)
             self.ui.DateSize.setFont(font)
             self.ui.Hr12NotUsage.setFont(font)
@@ -307,6 +357,8 @@ class TimeDisplaySettings(QDialog):
             self.ui.WindowVisibilitySlider.setFont(font)
             self.ui.setFrameless.setFont(font)
             self.ui.setUseNativeTheme.setFont(font)
+            self.ui.UseBoldFont.setFont(font)
+            self.ui.FontWeightSelection.setFont(font)
             self.ui.label.setFont(title_font)
 
     def accept(self):
@@ -324,6 +376,8 @@ class TimeDisplaySettings(QDialog):
         self.json.update_specific_json("windowVisibility", self.ui.WindowVisibilitySlider.value())
         self.json.update_specific_json("framelessWindowBar", self.ui.setFrameless.isChecked())
         self.json.update_specific_json("useNativeTheme", self.ui.setUseNativeTheme.isChecked())
+        self.json.update_specific_json("useBoldFont", self.ui.UseBoldFont.isChecked())
+        self.json.update_specific_json("fontWeight", self.ui.FontWeightSelection.currentText())
 
         # Update JSON File
         self.json.update_json_file()
@@ -347,6 +401,15 @@ class TimeDisplaySettings(QDialog):
         if self.json.return_specific_json("fontType") is not None:
             font = QFont(self.json.return_specific_json("fontType"), 20)
             title_font = QFont(self.json.return_specific_json("fontType"), 30)
+
+            # Set Bold
+            font.setBold(self.json.return_specific_json("useBoldFont"))
+            title_font.setBold(self.json.return_specific_json("useNativeTheme"))
+
+            # Set Weight
+            font.setWeight(font_conversion[self.json.return_specific_json("fontWeight")][1])
+            title_font.setWeight(font_conversion[self.json.return_specific_json("fontWeight")][1])
+
             self.ui.TimeSize.setFont(font)
             self.ui.DateSize.setFont(font)
             self.ui.Hr12NotUsage.setFont(font)

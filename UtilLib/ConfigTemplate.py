@@ -27,6 +27,8 @@ CONFIG_DEFAULT = {
     "memVWindowSize": 0,  # Vertical Window Size Memory
     "windowVisibility": 100,  # Window Visibility
     "framelessWindowBar": False, # Set Frameless Window Bar
-    "useNativeTheme": False  # Use Native Theme - Use OS Theme Colours or Light/Dark Mode
+    "useNativeTheme": False,  # Use Native Theme - Use OS Theme Colours or Light/Dark Mode
+    "useBoldFont": False,  # Use Bold Font - if Regular Font is not strong enough for illustration
+    "fontWeight": "Normal"  # Font Weight
 }
 # ======================================================================================================================

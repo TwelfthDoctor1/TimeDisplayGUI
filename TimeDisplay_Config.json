@@ -1,18 +1,19 @@
 {
-    "WindowVisibility": 100,
     "darkMode": true,
     "fontSize12Hr": 50,
     "fontSizeDate": 30,
     "fontSizeTime": 70,
     "fontType": "LTAIdentity",
+    "fontWeight": "Normal",
     "framelessWindowBar": false,
     "is24Hr": false,
     "isFloating": false,
-    "memHWindowSize": 433,
+    "memHWindowSize": 413,
     "memVWindowSize": 195,
     "showDate": false,
     "showHr12": true,
     "showSecs": true,
+    "useBoldFont": false,
     "useNativeTheme": true,
     "windowVisibility": 100
 }
