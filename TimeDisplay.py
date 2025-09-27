@@ -17,7 +17,7 @@ from UtilLib.ConfigTemplate import CONFIG_DEFAULT, CONFIG_NAME
 #
 # Setting to configure Filepath.
 # Files will be saved in the ~ Directory (ref. User Directory)
-DEBUG = True
+DEBUG = False
 
 setDebugState_Config(DEBUG, Path(os.path.expanduser("~")).resolve())
 # ======================================================================================================================
@@ -30,3 +30,4 @@ config.generate_json(CONFIG_DEFAULT)
 # Run GUI
 run_GUI()
 # ======================================================================================================================
+

@@ -54,7 +54,7 @@ if platform == "darwin":  # macOS
     # Include --windowed flag
     PyInstaller.__main__.run(
         [
-            "-F",
+            "-D",
             CORE_COMPILE,
             f"-n={MAIN_PY}",
             "--windowed",
@@ -92,13 +92,15 @@ else:  # Windows
     # For compiling into .exe
     PyInstaller.__main__.run(
         [
-            "-F",
+            "-D",
             CORE_COMPILE,
             f"-n={MAIN_PY}",
             "--windowed",
             "-y",
             f"--distpath={DIST_PATH}",
-            f"--workpath={BUILD_PATH}"
+            f"--workpath={BUILD_PATH}",
+            f"--add-data={RESOURCE_PATH}:Resources",
+            f"-i={ICON_PATH}"
         ],
     )
     # os.system(r"start .\Win32_CompileTimeDisplay.cmd")

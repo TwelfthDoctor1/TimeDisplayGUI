@@ -74,4 +74,4 @@ delete_old_apprentice_log = True
 # Delete old MasterLogger Logs
 delete_old_master_log = True
 
-setDebugState_Log(True, False, Path(os.path.expanduser("~")).resolve()) # # Path(__file__).resolve().parent.parent
+setDebugState_Log(False, False, Path(os.path.expanduser("~")).resolve()) # # Path(__file__).resolve().parent.parent
