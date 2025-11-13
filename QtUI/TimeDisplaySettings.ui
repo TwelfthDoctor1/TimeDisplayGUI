@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>611</width>
-    <height>411</height>
+    <height>432</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -38,7 +38,7 @@
    <item>
     <widget class="QTabWidget" name="tabWidget">
      <property name="currentIndex">
-      <number>1</number>
+      <number>0</number>
      </property>
      <property name="usesScrollButtons">
       <bool>true</bool>
@@ -113,6 +113,13 @@
         <widget class="QCheckBox" name="setFrameless">
          <property name="text">
           <string>Frameless</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="useMiniUI">
+         <property name="text">
+          <string>Use Mini UI (Shows Time Only)</string>
          </property>
         </widget>
        </item>

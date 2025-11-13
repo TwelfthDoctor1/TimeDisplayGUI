@@ -14,7 +14,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_Settings(object):
     def setupUi(self, Settings):
         Settings.setObjectName("Settings")
-        Settings.resize(611, 411)
+        Settings.resize(611, 432)
         self.verticalLayout = QtWidgets.QVBoxLayout(Settings)
         self.verticalLayout.setObjectName("verticalLayout")
         self.label = QtWidgets.QLabel(Settings)
@@ -65,6 +65,9 @@ class Ui_Settings(object):
         self.setFrameless = QtWidgets.QCheckBox(self.DisplayTab)
         self.setFrameless.setObjectName("setFrameless")
         self.verticalLayout_4.addWidget(self.setFrameless)
+        self.useMiniUI = QtWidgets.QCheckBox(self.DisplayTab)
+        self.useMiniUI.setObjectName("useMiniUI")
+        self.verticalLayout_4.addWidget(self.useMiniUI)
         self.line_2 = QtWidgets.QFrame(self.DisplayTab)
         self.line_2.setFrameShape(QtWidgets.QFrame.HLine)
         self.line_2.setFrameShadow(QtWidgets.QFrame.Sunken)
@@ -178,7 +181,7 @@ class Ui_Settings(object):
         self.verticalLayout.addWidget(self.buttonBox)
 
         self.retranslateUi(Settings)
-        self.tabWidget.setCurrentIndex(1)
+        self.tabWidget.setCurrentIndex(0)
         self.buttonBox.accepted.connect(Settings.accept) # type: ignore
         self.buttonBox.rejected.connect(Settings.reject) # type: ignore
         QtCore.QMetaObject.connectSlotsByName(Settings)
@@ -195,6 +198,7 @@ class Ui_Settings(object):
         self.setUseNativeTheme.setText(_translate("Settings", "Use System Native Theme"))
         self.FloatWindow.setText(_translate("Settings", "Float on Top"))
         self.setFrameless.setText(_translate("Settings", "Frameless"))
+        self.useMiniUI.setText(_translate("Settings", "Use Mini UI (Shows Time Only)"))
         self.WindowVisibilityLabel.setText(_translate("Settings", "Window Visibility:"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.DisplayTab), _translate("Settings", "Display"))
         self.FontLabel.setText(_translate("Settings", "Font: "))

@@ -8,12 +8,13 @@
     "framelessWindowBar": false,
     "is24Hr": false,
     "isFloating": false,
-    "memHWindowSize": 413,
+    "memHWindowSize": 403,
     "memVWindowSize": 195,
     "showDate": false,
     "showHr12": true,
     "showSecs": true,
     "useBoldFont": false,
+    "useMiniUI": false,
     "useNativeTheme": true,
     "windowVisibility": 100
 }

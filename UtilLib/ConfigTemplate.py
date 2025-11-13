@@ -29,6 +29,7 @@ CONFIG_DEFAULT = {
     "framelessWindowBar": False, # Set Frameless Window Bar
     "useNativeTheme": False,  # Use Native Theme - Use OS Theme Colours or Light/Dark Mode
     "useBoldFont": False,  # Use Bold Font - if Regular Font is not strong enough for illustration
-    "fontWeight": "Normal"  # Font Weight
+    "fontWeight": "Normal",  # Font Weight
+    "useMiniUI": False  # Use Mini UI - Will only show clock display
 }
 # ======================================================================================================================
