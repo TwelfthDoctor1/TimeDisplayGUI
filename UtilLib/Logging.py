@@ -32,18 +32,19 @@ class LoggerClass(ApprenticeLogger):
 
     Modified to include logging to console.
     """
-    def __init__(self, module_name=None, main_owner=None, additional_context=None, enable=True):
+
+    def __init__(self, module_name=None, main_owner=None, additional_context=None, log_enable=True, mlog_enable=False):
         super(LoggerClass, self).__init__(
             module_name=module_name,
             main_owner=main_owner,
             additional_context=additional_context,
-            enable=enable
+            enable=log_enable
         )
         self.mlog = MasterLogger(
             module_name=module_name,
             main_owner=main_owner,
             additional_context=additional_context,
-            enable=enable
+            enable=mlog_enable
         )
         self.info(f"File creation of Log at: {self.get_log_dir()}")
         self.mlog.info(f"File creation of Log at: {self.mlog.get_log_dir()}")

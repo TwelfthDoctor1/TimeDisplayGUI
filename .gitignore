@@ -1,4 +1,6 @@
 # Project exclude paths
 /CompileBuild/
 /Test/
-/UIArchival/
+/UIArchival/!/TimeDisplay.spec
+!/TimeDisplay_Apprentice_Log.log
+!/TimeDisplay_Master_Log.log
